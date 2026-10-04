@@ -1,0 +1,70 @@
+/Drafts/
+
+# Python caches and local environments
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+.venv/
+venv/
+env/
+.env
+.env.*
+!.env.example
+
+# Machine-local editor settings
+/.vscode/settings.json
+/.vscode/*.code-workspace
+*.code-workspace
+/.idea/
+
+# LaTeX build artifacts; manuscript sources and PDF figures stay tracked
+/paper/**/*.aux
+/paper/**/*.bbl
+/paper/**/*.bcf
+/paper/**/*.blg
+/paper/**/*.fdb_latexmk
+/paper/**/*.fls
+/paper/**/*.log
+/paper/**/*.out
+/paper/**/*.run.xml
+/paper/**/*.synctex.gz
+/paper/**/*.toc
+/paper/**/*.lof
+/paper/**/*.lot
+/paper/**/*.nav
+/paper/**/*.snm
+/paper/**/*.vrb
+/paper/**/_minted*/
+
+# Generated experiment outputs and checkpoints
+/experiments_new/logs/*
+!/experiments_new/logs/.gitkeep
+/experiments_new/results/*
+!/experiments_new/results/.gitkeep
+**/ckpts/*
+!**/ckpts/.gitignore
+**/checkpoints/
+*.ckpt
+*.pt
+*.pth
+/analysis/statistics/cache/
+/analysis/statistics/caches/
+
+# Downloaded/generated datasets (existing nested ignore rules are preserved)
+/datasets/*
+!/datasets/.gitignore
+!/datasets/README*
+
+# Temporary and OS files
+*.tmp
+*.temp
+*.bak
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+Desktop.ini
