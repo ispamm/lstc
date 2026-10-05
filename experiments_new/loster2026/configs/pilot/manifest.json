@@ -1,0 +1,771 @@
+{
+  "schema": 1,
+  "execution_performed": false,
+  "specification": "analysis/audits/04-method-and-experiment-plan.md",
+  "audit4_sha256": "e549bf5a46ca9a4b721d46bfcafa6de2810f30366377620733162371e5fc6c26",
+  "dataset_metadata": {
+    "SyntheticControl": {
+      "N": 600,
+      "L": 60,
+      "k": 6
+    },
+    "Beef": {
+      "N": 60,
+      "L": 470,
+      "k": 5
+    },
+    "ECG200": {
+      "N": 200,
+      "L": 96,
+      "k": 2
+    },
+    "OSULeaf": {
+      "N": 442,
+      "L": 427,
+      "k": 6
+    },
+    "ShapesAll": {
+      "N": 1200,
+      "L": 512,
+      "k": 60
+    },
+    "SemgHandMovementCh2": {
+      "N": 900,
+      "L": 1500,
+      "k": 6
+    },
+    "CinCECGTorso": {
+      "N": 1420,
+      "L": 1639,
+      "k": 4
+    },
+    "StarLightCurves": {
+      "N": 9236,
+      "L": 1024,
+      "k": 3
+    }
+  },
+  "run_count": 120,
+  "runs": [
+    {
+      "dataset": "SyntheticControl",
+      "variant": "LoSTer-Legacy-Clean",
+      "seed": 0,
+      "config_id": "pilot/legacy-clean.json"
+    },
+    {
+      "dataset": "SyntheticControl",
+      "variant": "LoSTer-Legacy-Clean",
+      "seed": 1,
+      "config_id": "pilot/legacy-clean.json"
+    },
+    {
+      "dataset": "SyntheticControl",
+      "variant": "LoSTer-Legacy-Clean",
+      "seed": 2,
+      "config_id": "pilot/legacy-clean.json"
+    },
+    {
+      "dataset": "SyntheticControl",
+      "variant": "LoSTer-Legacy-Clean",
+      "seed": 3,
+      "config_id": "pilot/legacy-clean.json"
+    },
+    {
+      "dataset": "SyntheticControl",
+      "variant": "LoSTer-Legacy-Clean",
+      "seed": 4,
+      "config_id": "pilot/legacy-clean.json"
+    },
+    {
+      "dataset": "SyntheticControl",
+      "variant": "LoSTer-NoResoftmax",
+      "seed": 0,
+      "config_id": "pilot/no-resoftmax.json"
+    },
+    {
+      "dataset": "SyntheticControl",
+      "variant": "LoSTer-NoResoftmax",
+      "seed": 1,
+      "config_id": "pilot/no-resoftmax.json"
+    },
+    {
+      "dataset": "SyntheticControl",
+      "variant": "LoSTer-NoResoftmax",
+      "seed": 2,
+      "config_id": "pilot/no-resoftmax.json"
+    },
+    {
+      "dataset": "SyntheticControl",
+      "variant": "LoSTer-NoResoftmax",
+      "seed": 3,
+      "config_id": "pilot/no-resoftmax.json"
+    },
+    {
+      "dataset": "SyntheticControl",
+      "variant": "LoSTer-NoResoftmax",
+      "seed": 4,
+      "config_id": "pilot/no-resoftmax.json"
+    },
+    {
+      "dataset": "SyntheticControl",
+      "variant": "LoSTer-AlignedInit",
+      "seed": 0,
+      "config_id": "pilot/aligned-init.json"
+    },
+    {
+      "dataset": "SyntheticControl",
+      "variant": "LoSTer-AlignedInit",
+      "seed": 1,
+      "config_id": "pilot/aligned-init.json"
+    },
+    {
+      "dataset": "SyntheticControl",
+      "variant": "LoSTer-AlignedInit",
+      "seed": 2,
+      "config_id": "pilot/aligned-init.json"
+    },
+    {
+      "dataset": "SyntheticControl",
+      "variant": "LoSTer-AlignedInit",
+      "seed": 3,
+      "config_id": "pilot/aligned-init.json"
+    },
+    {
+      "dataset": "SyntheticControl",
+      "variant": "LoSTer-AlignedInit",
+      "seed": 4,
+      "config_id": "pilot/aligned-init.json"
+    },
+    {
+      "dataset": "Beef",
+      "variant": "LoSTer-Legacy-Clean",
+      "seed": 0,
+      "config_id": "pilot/legacy-clean.json"
+    },
+    {
+      "dataset": "Beef",
+      "variant": "LoSTer-Legacy-Clean",
+      "seed": 1,
+      "config_id": "pilot/legacy-clean.json"
+    },
+    {
+      "dataset": "Beef",
+      "variant": "LoSTer-Legacy-Clean",
+      "seed": 2,
+      "config_id": "pilot/legacy-clean.json"
+    },
+    {
+      "dataset": "Beef",
+      "variant": "LoSTer-Legacy-Clean",
+      "seed": 3,
+      "config_id": "pilot/legacy-clean.json"
+    },
+    {
+      "dataset": "Beef",
+      "variant": "LoSTer-Legacy-Clean",
+      "seed": 4,
+      "config_id": "pilot/legacy-clean.json"
+    },
+    {
+      "dataset": "Beef",
+      "variant": "LoSTer-NoResoftmax",
+      "seed": 0,
+      "config_id": "pilot/no-resoftmax.json"
+    },
+    {
+      "dataset": "Beef",
+      "variant": "LoSTer-NoResoftmax",
+      "seed": 1,
+      "config_id": "pilot/no-resoftmax.json"
+    },
+    {
+      "dataset": "Beef",
+      "variant": "LoSTer-NoResoftmax",
+      "seed": 2,
+      "config_id": "pilot/no-resoftmax.json"
+    },
+    {
+      "dataset": "Beef",
+      "variant": "LoSTer-NoResoftmax",
+      "seed": 3,
+      "config_id": "pilot/no-resoftmax.json"
+    },
+    {
+      "dataset": "Beef",
+      "variant": "LoSTer-NoResoftmax",
+      "seed": 4,
+      "config_id": "pilot/no-resoftmax.json"
+    },
+    {
+      "dataset": "Beef",
+      "variant": "LoSTer-AlignedInit",
+      "seed": 0,
+      "config_id": "pilot/aligned-init.json"
+    },
+    {
+      "dataset": "Beef",
+      "variant": "LoSTer-AlignedInit",
+      "seed": 1,
+      "config_id": "pilot/aligned-init.json"
+    },
+    {
+      "dataset": "Beef",
+      "variant": "LoSTer-AlignedInit",
+      "seed": 2,
+      "config_id": "pilot/aligned-init.json"
+    },
+    {
+      "dataset": "Beef",
+      "variant": "LoSTer-AlignedInit",
+      "seed": 3,
+      "config_id": "pilot/aligned-init.json"
+    },
+    {
+      "dataset": "Beef",
+      "variant": "LoSTer-AlignedInit",
+      "seed": 4,
+      "config_id": "pilot/aligned-init.json"
+    },
+    {
+      "dataset": "ECG200",
+      "variant": "LoSTer-Legacy-Clean",
+      "seed": 0,
+      "config_id": "pilot/legacy-clean.json"
+    },
+    {
+      "dataset": "ECG200",
+      "variant": "LoSTer-Legacy-Clean",
+      "seed": 1,
+      "config_id": "pilot/legacy-clean.json"
+    },
+    {
+      "dataset": "ECG200",
+      "variant": "LoSTer-Legacy-Clean",
+      "seed": 2,
+      "config_id": "pilot/legacy-clean.json"
+    },
+    {
+      "dataset": "ECG200",
+      "variant": "LoSTer-Legacy-Clean",
+      "seed": 3,
+      "config_id": "pilot/legacy-clean.json"
+    },
+    {
+      "dataset": "ECG200",
+      "variant": "LoSTer-Legacy-Clean",
+      "seed": 4,
+      "config_id": "pilot/legacy-clean.json"
+    },
+    {
+      "dataset": "ECG200",
+      "variant": "LoSTer-NoResoftmax",
+      "seed": 0,
+      "config_id": "pilot/no-resoftmax.json"
+    },
+    {
+      "dataset": "ECG200",
+      "variant": "LoSTer-NoResoftmax",
+      "seed": 1,
+      "config_id": "pilot/no-resoftmax.json"
+    },
+    {
+      "dataset": "ECG200",
+      "variant": "LoSTer-NoResoftmax",
+      "seed": 2,
+      "config_id": "pilot/no-resoftmax.json"
+    },
+    {
+      "dataset": "ECG200",
+      "variant": "LoSTer-NoResoftmax",
+      "seed": 3,
+      "config_id": "pilot/no-resoftmax.json"
+    },
+    {
+      "dataset": "ECG200",
+      "variant": "LoSTer-NoResoftmax",
+      "seed": 4,
+      "config_id": "pilot/no-resoftmax.json"
+    },
+    {
+      "dataset": "ECG200",
+      "variant": "LoSTer-AlignedInit",
+      "seed": 0,
+      "config_id": "pilot/aligned-init.json"
+    },
+    {
+      "dataset": "ECG200",
+      "variant": "LoSTer-AlignedInit",
+      "seed": 1,
+      "config_id": "pilot/aligned-init.json"
+    },
+    {
+      "dataset": "ECG200",
+      "variant": "LoSTer-AlignedInit",
+      "seed": 2,
+      "config_id": "pilot/aligned-init.json"
+    },
+    {
+      "dataset": "ECG200",
+      "variant": "LoSTer-AlignedInit",
+      "seed": 3,
+      "config_id": "pilot/aligned-init.json"
+    },
+    {
+      "dataset": "ECG200",
+      "variant": "LoSTer-AlignedInit",
+      "seed": 4,
+      "config_id": "pilot/aligned-init.json"
+    },
+    {
+      "dataset": "OSULeaf",
+      "variant": "LoSTer-Legacy-Clean",
+      "seed": 0,
+      "config_id": "pilot/legacy-clean.json"
+    },
+    {
+      "dataset": "OSULeaf",
+      "variant": "LoSTer-Legacy-Clean",
+      "seed": 1,
+      "config_id": "pilot/legacy-clean.json"
+    },
+    {
+      "dataset": "OSULeaf",
+      "variant": "LoSTer-Legacy-Clean",
+      "seed": 2,
+      "config_id": "pilot/legacy-clean.json"
+    },
+    {
+      "dataset": "OSULeaf",
+      "variant": "LoSTer-Legacy-Clean",
+      "seed": 3,
+      "config_id": "pilot/legacy-clean.json"
+    },
+    {
+      "dataset": "OSULeaf",
+      "variant": "LoSTer-Legacy-Clean",
+      "seed": 4,
+      "config_id": "pilot/legacy-clean.json"
+    },
+    {
+      "dataset": "OSULeaf",
+      "variant": "LoSTer-NoResoftmax",
+      "seed": 0,
+      "config_id": "pilot/no-resoftmax.json"
+    },
+    {
+      "dataset": "OSULeaf",
+      "variant": "LoSTer-NoResoftmax",
+      "seed": 1,
+      "config_id": "pilot/no-resoftmax.json"
+    },
+    {
+      "dataset": "OSULeaf",
+      "variant": "LoSTer-NoResoftmax",
+      "seed": 2,
+      "config_id": "pilot/no-resoftmax.json"
+    },
+    {
+      "dataset": "OSULeaf",
+      "variant": "LoSTer-NoResoftmax",
+      "seed": 3,
+      "config_id": "pilot/no-resoftmax.json"
+    },
+    {
+      "dataset": "OSULeaf",
+      "variant": "LoSTer-NoResoftmax",
+      "seed": 4,
+      "config_id": "pilot/no-resoftmax.json"
+    },
+    {
+      "dataset": "OSULeaf",
+      "variant": "LoSTer-AlignedInit",
+      "seed": 0,
+      "config_id": "pilot/aligned-init.json"
+    },
+    {
+      "dataset": "OSULeaf",
+      "variant": "LoSTer-AlignedInit",
+      "seed": 1,
+      "config_id": "pilot/aligned-init.json"
+    },
+    {
+      "dataset": "OSULeaf",
+      "variant": "LoSTer-AlignedInit",
+      "seed": 2,
+      "config_id": "pilot/aligned-init.json"
+    },
+    {
+      "dataset": "OSULeaf",
+      "variant": "LoSTer-AlignedInit",
+      "seed": 3,
+      "config_id": "pilot/aligned-init.json"
+    },
+    {
+      "dataset": "OSULeaf",
+      "variant": "LoSTer-AlignedInit",
+      "seed": 4,
+      "config_id": "pilot/aligned-init.json"
+    },
+    {
+      "dataset": "ShapesAll",
+      "variant": "LoSTer-Legacy-Clean",
+      "seed": 0,
+      "config_id": "pilot/legacy-clean.json"
+    },
+    {
+      "dataset": "ShapesAll",
+      "variant": "LoSTer-Legacy-Clean",
+      "seed": 1,
+      "config_id": "pilot/legacy-clean.json"
+    },
+    {
+      "dataset": "ShapesAll",
+      "variant": "LoSTer-Legacy-Clean",
+      "seed": 2,
+      "config_id": "pilot/legacy-clean.json"
+    },
+    {
+      "dataset": "ShapesAll",
+      "variant": "LoSTer-Legacy-Clean",
+      "seed": 3,
+      "config_id": "pilot/legacy-clean.json"
+    },
+    {
+      "dataset": "ShapesAll",
+      "variant": "LoSTer-Legacy-Clean",
+      "seed": 4,
+      "config_id": "pilot/legacy-clean.json"
+    },
+    {
+      "dataset": "ShapesAll",
+      "variant": "LoSTer-NoResoftmax",
+      "seed": 0,
+      "config_id": "pilot/no-resoftmax.json"
+    },
+    {
+      "dataset": "ShapesAll",
+      "variant": "LoSTer-NoResoftmax",
+      "seed": 1,
+      "config_id": "pilot/no-resoftmax.json"
+    },
+    {
+      "dataset": "ShapesAll",
+      "variant": "LoSTer-NoResoftmax",
+      "seed": 2,
+      "config_id": "pilot/no-resoftmax.json"
+    },
+    {
+      "dataset": "ShapesAll",
+      "variant": "LoSTer-NoResoftmax",
+      "seed": 3,
+      "config_id": "pilot/no-resoftmax.json"
+    },
+    {
+      "dataset": "ShapesAll",
+      "variant": "LoSTer-NoResoftmax",
+      "seed": 4,
+      "config_id": "pilot/no-resoftmax.json"
+    },
+    {
+      "dataset": "ShapesAll",
+      "variant": "LoSTer-AlignedInit",
+      "seed": 0,
+      "config_id": "pilot/aligned-init.json"
+    },
+    {
+      "dataset": "ShapesAll",
+      "variant": "LoSTer-AlignedInit",
+      "seed": 1,
+      "config_id": "pilot/aligned-init.json"
+    },
+    {
+      "dataset": "ShapesAll",
+      "variant": "LoSTer-AlignedInit",
+      "seed": 2,
+      "config_id": "pilot/aligned-init.json"
+    },
+    {
+      "dataset": "ShapesAll",
+      "variant": "LoSTer-AlignedInit",
+      "seed": 3,
+      "config_id": "pilot/aligned-init.json"
+    },
+    {
+      "dataset": "ShapesAll",
+      "variant": "LoSTer-AlignedInit",
+      "seed": 4,
+      "config_id": "pilot/aligned-init.json"
+    },
+    {
+      "dataset": "SemgHandMovementCh2",
+      "variant": "LoSTer-Legacy-Clean",
+      "seed": 0,
+      "config_id": "pilot/legacy-clean.json"
+    },
+    {
+      "dataset": "SemgHandMovementCh2",
+      "variant": "LoSTer-Legacy-Clean",
+      "seed": 1,
+      "config_id": "pilot/legacy-clean.json"
+    },
+    {
+      "dataset": "SemgHandMovementCh2",
+      "variant": "LoSTer-Legacy-Clean",
+      "seed": 2,
+      "config_id": "pilot/legacy-clean.json"
+    },
+    {
+      "dataset": "SemgHandMovementCh2",
+      "variant": "LoSTer-Legacy-Clean",
+      "seed": 3,
+      "config_id": "pilot/legacy-clean.json"
+    },
+    {
+      "dataset": "SemgHandMovementCh2",
+      "variant": "LoSTer-Legacy-Clean",
+      "seed": 4,
+      "config_id": "pilot/legacy-clean.json"
+    },
+    {
+      "dataset": "SemgHandMovementCh2",
+      "variant": "LoSTer-NoResoftmax",
+      "seed": 0,
+      "config_id": "pilot/no-resoftmax.json"
+    },
+    {
+      "dataset": "SemgHandMovementCh2",
+      "variant": "LoSTer-NoResoftmax",
+      "seed": 1,
+      "config_id": "pilot/no-resoftmax.json"
+    },
+    {
+      "dataset": "SemgHandMovementCh2",
+      "variant": "LoSTer-NoResoftmax",
+      "seed": 2,
+      "config_id": "pilot/no-resoftmax.json"
+    },
+    {
+      "dataset": "SemgHandMovementCh2",
+      "variant": "LoSTer-NoResoftmax",
+      "seed": 3,
+      "config_id": "pilot/no-resoftmax.json"
+    },
+    {
+      "dataset": "SemgHandMovementCh2",
+      "variant": "LoSTer-NoResoftmax",
+      "seed": 4,
+      "config_id": "pilot/no-resoftmax.json"
+    },
+    {
+      "dataset": "SemgHandMovementCh2",
+      "variant": "LoSTer-AlignedInit",
+      "seed": 0,
+      "config_id": "pilot/aligned-init.json"
+    },
+    {
+      "dataset": "SemgHandMovementCh2",
+      "variant": "LoSTer-AlignedInit",
+      "seed": 1,
+      "config_id": "pilot/aligned-init.json"
+    },
+    {
+      "dataset": "SemgHandMovementCh2",
+      "variant": "LoSTer-AlignedInit",
+      "seed": 2,
+      "config_id": "pilot/aligned-init.json"
+    },
+    {
+      "dataset": "SemgHandMovementCh2",
+      "variant": "LoSTer-AlignedInit",
+      "seed": 3,
+      "config_id": "pilot/aligned-init.json"
+    },
+    {
+      "dataset": "SemgHandMovementCh2",
+      "variant": "LoSTer-AlignedInit",
+      "seed": 4,
+      "config_id": "pilot/aligned-init.json"
+    },
+    {
+      "dataset": "CinCECGTorso",
+      "variant": "LoSTer-Legacy-Clean",
+      "seed": 0,
+      "config_id": "pilot/legacy-clean.json"
+    },
+    {
+      "dataset": "CinCECGTorso",
+      "variant": "LoSTer-Legacy-Clean",
+      "seed": 1,
+      "config_id": "pilot/legacy-clean.json"
+    },
+    {
+      "dataset": "CinCECGTorso",
+      "variant": "LoSTer-Legacy-Clean",
+      "seed": 2,
+      "config_id": "pilot/legacy-clean.json"
+    },
+    {
+      "dataset": "CinCECGTorso",
+      "variant": "LoSTer-Legacy-Clean",
+      "seed": 3,
+      "config_id": "pilot/legacy-clean.json"
+    },
+    {
+      "dataset": "CinCECGTorso",
+      "variant": "LoSTer-Legacy-Clean",
+      "seed": 4,
+      "config_id": "pilot/legacy-clean.json"
+    },
+    {
+      "dataset": "CinCECGTorso",
+      "variant": "LoSTer-NoResoftmax",
+      "seed": 0,
+      "config_id": "pilot/no-resoftmax.json"
+    },
+    {
+      "dataset": "CinCECGTorso",
+      "variant": "LoSTer-NoResoftmax",
+      "seed": 1,
+      "config_id": "pilot/no-resoftmax.json"
+    },
+    {
+      "dataset": "CinCECGTorso",
+      "variant": "LoSTer-NoResoftmax",
+      "seed": 2,
+      "config_id": "pilot/no-resoftmax.json"
+    },
+    {
+      "dataset": "CinCECGTorso",
+      "variant": "LoSTer-NoResoftmax",
+      "seed": 3,
+      "config_id": "pilot/no-resoftmax.json"
+    },
+    {
+      "dataset": "CinCECGTorso",
+      "variant": "LoSTer-NoResoftmax",
+      "seed": 4,
+      "config_id": "pilot/no-resoftmax.json"
+    },
+    {
+      "dataset": "CinCECGTorso",
+      "variant": "LoSTer-AlignedInit",
+      "seed": 0,
+      "config_id": "pilot/aligned-init.json"
+    },
+    {
+      "dataset": "CinCECGTorso",
+      "variant": "LoSTer-AlignedInit",
+      "seed": 1,
+      "config_id": "pilot/aligned-init.json"
+    },
+    {
+      "dataset": "CinCECGTorso",
+      "variant": "LoSTer-AlignedInit",
+      "seed": 2,
+      "config_id": "pilot/aligned-init.json"
+    },
+    {
+      "dataset": "CinCECGTorso",
+      "variant": "LoSTer-AlignedInit",
+      "seed": 3,
+      "config_id": "pilot/aligned-init.json"
+    },
+    {
+      "dataset": "CinCECGTorso",
+      "variant": "LoSTer-AlignedInit",
+      "seed": 4,
+      "config_id": "pilot/aligned-init.json"
+    },
+    {
+      "dataset": "StarLightCurves",
+      "variant": "LoSTer-Legacy-Clean",
+      "seed": 0,
+      "config_id": "pilot/legacy-clean.json"
+    },
+    {
+      "dataset": "StarLightCurves",
+      "variant": "LoSTer-Legacy-Clean",
+      "seed": 1,
+      "config_id": "pilot/legacy-clean.json"
+    },
+    {
+      "dataset": "StarLightCurves",
+      "variant": "LoSTer-Legacy-Clean",
+      "seed": 2,
+      "config_id": "pilot/legacy-clean.json"
+    },
+    {
+      "dataset": "StarLightCurves",
+      "variant": "LoSTer-Legacy-Clean",
+      "seed": 3,
+      "config_id": "pilot/legacy-clean.json"
+    },
+    {
+      "dataset": "StarLightCurves",
+      "variant": "LoSTer-Legacy-Clean",
+      "seed": 4,
+      "config_id": "pilot/legacy-clean.json"
+    },
+    {
+      "dataset": "StarLightCurves",
+      "variant": "LoSTer-NoResoftmax",
+      "seed": 0,
+      "config_id": "pilot/no-resoftmax.json"
+    },
+    {
+      "dataset": "StarLightCurves",
+      "variant": "LoSTer-NoResoftmax",
+      "seed": 1,
+      "config_id": "pilot/no-resoftmax.json"
+    },
+    {
+      "dataset": "StarLightCurves",
+      "variant": "LoSTer-NoResoftmax",
+      "seed": 2,
+      "config_id": "pilot/no-resoftmax.json"
+    },
+    {
+      "dataset": "StarLightCurves",
+      "variant": "LoSTer-NoResoftmax",
+      "seed": 3,
+      "config_id": "pilot/no-resoftmax.json"
+    },
+    {
+      "dataset": "StarLightCurves",
+      "variant": "LoSTer-NoResoftmax",
+      "seed": 4,
+      "config_id": "pilot/no-resoftmax.json"
+    },
+    {
+      "dataset": "StarLightCurves",
+      "variant": "LoSTer-AlignedInit",
+      "seed": 0,
+      "config_id": "pilot/aligned-init.json"
+    },
+    {
+      "dataset": "StarLightCurves",
+      "variant": "LoSTer-AlignedInit",
+      "seed": 1,
+      "config_id": "pilot/aligned-init.json"
+    },
+    {
+      "dataset": "StarLightCurves",
+      "variant": "LoSTer-AlignedInit",
+      "seed": 2,
+      "config_id": "pilot/aligned-init.json"
+    },
+    {
+      "dataset": "StarLightCurves",
+      "variant": "LoSTer-AlignedInit",
+      "seed": 3,
+      "config_id": "pilot/aligned-init.json"
+    },
+    {
+      "dataset": "StarLightCurves",
+      "variant": "LoSTer-AlignedInit",
+      "seed": 4,
+      "config_id": "pilot/aligned-init.json"
+    }
+  ]
+}

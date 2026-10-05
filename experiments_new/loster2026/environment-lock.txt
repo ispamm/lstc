@@ -1,0 +1,21 @@
+# Controlled 2026 runtime, validated on CPython 3.9.13 / Windows AMD64.
+# Exact scientific pins plus every required runtime dependency.
+# Hashes cover the validated cp39-win_amd64 and universal wheels only.
+# Other platforms/interpreter versions require separate validation.
+# Bundled pip 22.0.4 / setuptools 58.1.0 were sufficient; neither was upgraded.
+# No pytest is required: the harness uses standard-library unittest.
+--index-url https://pypi.org/simple
+--extra-index-url https://download.pytorch.org/whl/cu117
+--only-binary=:all:
+--require-hashes
+joblib==1.5.3 --hash=sha256:5fc3c5039fc5ca8c0276333a188bbd59d6b7ab37fe6632daa76bc7f9ec18e713
+numpy==1.22.4 --hash=sha256:f0725df166cf4785c0bc4cbfb320203182b1ecd30fee6e541c8752a92df6aa32
+pandas==1.5.3 --hash=sha256:dfd681c5dc216037e0b0a2c821f5ed99ba9f03ebcf119c7dac0e9a7b960b9ec9
+python-dateutil==2.9.0.post0 --hash=sha256:a8b2bc7bffae282281c8140a97d3aa9c14da0b136dfe83f850eea9a5f7470427
+pytz==2026.5 --hash=sha256:e658af3757f9e26a9d25dd2aff38335acd92bc9104f890a894b2c1ba28311b03
+scikit-learn==1.4.1.post1 --hash=sha256:234b6bda70fdcae9e4abbbe028582ce99c280458665a155eed0b820599377d25
+scipy==1.13.0 --hash=sha256:45c08bec71d3546d606989ba6e7daa6f0992918171e2a6f7fbedfa7361c2de1e
+six==1.17.0 --hash=sha256:4721f391ed90541fddacab5acf947aa0d3dc7d27b2e1e8eda2be8970586c3274
+threadpoolctl==3.7.0 --hash=sha256:cd8b60b5641b45c67bbf73c64c843235fc2d8a480c87389f52f5dbee893b86be
+torch==1.13.1+cu117 --hash=sha256:e775fa85f412bd1bf816b8798dadb3b852b71e33e8008e9db29b6190ed94fe27
+typing-extensions==4.16.0 --hash=sha256:481caa481374e813c1b176ada14e97f1f67a4539ce9cfeb3f350d78d6370c2e8

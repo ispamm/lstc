@@ -68,3 +68,11 @@ env/
 .DS_Store
 Thumbs.db
 Desktop.ini
+
+# Isolated LoSTer 2026 generated run output (Audit 5)
+/experiments_new/loster2026/artifacts/*
+!/experiments_new/loster2026/artifacts/README.md
+/experiments_new/loster2026/logs/*
+!/experiments_new/loster2026/logs/README.md
+/experiments_new/loster2026/results/*
+!/experiments_new/loster2026/results/README.md

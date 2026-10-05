@@ -1,0 +1,10 @@
+# Controlled 2026 scientific dependencies; not an exact historical runtime.
+# CPython 3.9, 64-bit. Use environment-lock.txt for the validated Windows lock.
+--index-url https://pypi.org/simple
+--extra-index-url https://download.pytorch.org/whl/cu117
+--only-binary=:all:
+numpy==1.22.4
+pandas==1.5.3
+scikit-learn==1.4.1.post1
+scipy==1.13.0
+torch==1.13.1+cu117
