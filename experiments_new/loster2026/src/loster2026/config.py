@@ -50,6 +50,7 @@ class Config:
     augmentation_order: tuple = ("sign", "equal-segment-permutation", "cubic-time-warp")
     sign_probability: float = 0.5
     max_segments_exclusive: int = 5
+    warp_mode: str = "HistoricalWarp"
     warp_sigma: float = 0.2
     warp_knots: int = 4
     augmentation_snapshots: int = 2
@@ -79,9 +80,14 @@ class Config:
             raise ValueError("Positive architecture/budget fields required")
         if self.sigma <= 0 or self.tau_minimum <= 0 or self.num_workers < 0:
             raise ValueError("Invalid numeric configuration")
+        expected_warp = {"HistoricalWarp": "cubic-time-warp", "MonotoneWarp": "monotone-time-warp"}
+        if self.warp_mode not in expected_warp or self.warp_sigma < 0 or self.warp_knots < 0:
+            raise ValueError("Invalid warp mode or parameters")
+        if self.warp_mode == "MonotoneWarp" and self.variant != VARIANTS[0]:
+            raise ValueError("Warp validation supports Legacy-Clean only")
         if (self.normalization != "per-series-z-ddof0" or not self.drop_last or
                 self.augmentation_snapshots != 2 or
-                tuple(self.augmentation_order) != ("sign", "equal-segment-permutation", "cubic-time-warp") or
+                tuple(self.augmentation_order) != ("sign", "equal-segment-permutation", expected_warp[self.warp_mode]) or
                 self.pretrain_optimizer != "Adam" or self.optimizer != "SGD" or
                 self.scheduler != "StepLR" or self.sign_probability != 0.5):
             raise ValueError("Unsupported methodological change")

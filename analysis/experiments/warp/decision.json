@@ -1,0 +1,28 @@
+{
+  "decision": "MONOTONEWARP ADOPTED",
+  "gates": {
+    "complete_40": true,
+    "valid_all_paths": true,
+    "new_collapse": true,
+    "new_near_collapse": true,
+    "dataset_ARI_band": true,
+    "macro_ARI_band": true,
+    "macro_NMI_band": true,
+    "stability_band": true
+  },
+  "catastrophic_datasets": [],
+  "systematic_catastrophic": false,
+  "macro_delta_ARI": 0.00018407025098406626,
+  "macro_delta_NMI_arithmetic": -1.5459767278273173e-05,
+  "mean_ARI_SD_increase": 0.00025576413159817204,
+  "positive_datasets": 3,
+  "negative_datasets": 3,
+  "W1_collapse": 0,
+  "W1_near_collapse": 0,
+  "W1_any_epoch_collapse": 0,
+  "pilot_preservation": {
+    "files": 1374,
+    "all_bytes_and_mtimes_unchanged": true,
+    "end_utc": "2026-10-08T15:08:30.356298+00:00"
+  }
+}

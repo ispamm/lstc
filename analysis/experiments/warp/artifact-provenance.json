@@ -1,0 +1,32 @@
+{
+  "parent_git_sha": "596a16391c4cc03b8bb1c71f1cd8aa473773a28a",
+  "training_source_sha256": "fcd966198dbf1e85bb5c6f2038fa19172eec0e1ea8a64ceb88340dffa9a7df16",
+  "primary_source_files": [
+    {
+      "file": "G:\\Articoli\\Articoli da Completare\\LoSTer 2026\\warp-validation\\sources\\iwana-uchida-augmentation.py",
+      "sha256": "8049f6301353fa1e33354ef66725cd2eeb6a5ba58bb0cbf8872cab37b459dede"
+    },
+    {
+      "file": "G:\\Articoli\\Articoli da Completare\\LoSTer 2026\\warp-validation\\sources\\um-example.py",
+      "sha256": "02dfd07f1875bbb8930e437be8495c6bb6cf321ff29b5a2f6564160f63aea6c1"
+    }
+  ],
+  "analysis_files": [
+    {
+      "file": "analysis\\experiments\\analyze_warp_validation.py",
+      "sha256": "1d30efb2d2819ed2abe7b87d01d32ad5f1ca1a821ca187059a218dcb65df3e3b"
+    },
+    {
+      "file": "analysis\\experiments\\validate_warp_artifacts.py",
+      "sha256": "5caf2b15a9ccee29d6af18ecdb3ad79e04633b500f9efa63e0eb99c3e0fbea21"
+    }
+  ],
+  "protocol_sha256": "440664134d2b6e16c772b1acc23669c5ee2c43d8f4e09faa7927f038c316ed97",
+  "independent_validation_sha256": "8d73a9062b257d692a5086270b46f7dee6899f2e54caf54040e4c0ce38afe5d2",
+  "pilot_preservation_sha256": "02d4a0ed02bd26d1cb178f87a094a1d92b59fd14ffc8e3e48fc762a52d0de6c7",
+  "scientific_source_current_matches_training_archive": true,
+  "all_80_snapshots_independently_verified": true,
+  "report07_committed": false,
+  "report07_pushed": false,
+  "CORE44_launched": false
+}

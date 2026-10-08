@@ -58,6 +58,10 @@ def augment(series, config):
     return a, info
 
 def two_snapshots(series, config):
-    train, train_info = augment(series, config)
-    initial, initial_info = augment(series, config)
+    transform = augment
+    if config.warp_mode == "MonotoneWarp":
+        from .monotone_warp import augment_monotone
+        transform = augment_monotone
+    train, train_info = transform(series, config)
+    initial, initial_info = transform(series, config)
     return train, initial, {"A_train": train_info, "A_init": initial_info}
