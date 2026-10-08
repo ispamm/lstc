@@ -1,0 +1,621 @@
+{
+  "status": "COMPLETE",
+  "legacy": {
+    "datasets": {
+      "SyntheticControl": {
+        "ARI_mean": 0.5749350255091622,
+        "ARI_sd": 0.054214128406645024,
+        "NMI_mean": 0.7322447069524916,
+        "metrics": {
+          "ARI": {
+            "mean": 0.5749350255091622,
+            "sample_sd_ddof1": 0.054214128406645024
+          },
+          "NMI_arithmetic": {
+            "mean": 0.7322447069524916,
+            "sample_sd_ddof1": 0.05526276258416251
+          },
+          "RI": {
+            "mean": 0.8702159154145799,
+            "sample_sd_ddof1": 0.01648199646429234
+          },
+          "ACC": {
+            "mean": 0.6906666666666667,
+            "sample_sd_ddof1": 0.0985703358577575
+          }
+        }
+      },
+      "Beef": {
+        "ARI_mean": 0.10730049739921405,
+        "ARI_sd": 0.020910625307545026,
+        "NMI_mean": 0.292811738703271,
+        "metrics": {
+          "ARI": {
+            "mean": 0.10730049739921405,
+            "sample_sd_ddof1": 0.020910625307545026
+          },
+          "NMI_arithmetic": {
+            "mean": 0.292811738703271,
+            "sample_sd_ddof1": 0.019684929966216146
+          },
+          "RI": {
+            "mean": 0.6796610169491525,
+            "sample_sd_ddof1": 0.028882713070330537
+          },
+          "ACC": {
+            "mean": 0.37333333333333335,
+            "sample_sd_ddof1": 0.03836954811073781
+          }
+        }
+      },
+      "ECG200": {
+        "ARI_mean": 0.21452637900567165,
+        "ARI_sd": 0.04865697018470506,
+        "NMI_mean": 0.12641559452886394,
+        "metrics": {
+          "ARI": {
+            "mean": 0.21452637900567165,
+            "sample_sd_ddof1": 0.04865697018470506
+          },
+          "NMI_arithmetic": {
+            "mean": 0.12641559452886394,
+            "sample_sd_ddof1": 0.03522276551800008
+          },
+          "RI": {
+            "mean": 0.6169346733668342,
+            "sample_sd_ddof1": 0.020049117737256504
+          },
+          "ACC": {
+            "mean": 0.743,
+            "sample_sd_ddof1": 0.021679483388678818
+          }
+        }
+      },
+      "OSULeaf": {
+        "ARI_mean": 0.15290312148784418,
+        "ARI_sd": 0.016491195730318722,
+        "NMI_mean": 0.21652687354208072,
+        "metrics": {
+          "ARI": {
+            "mean": 0.15290312148784418,
+            "sample_sd_ddof1": 0.016491195730318722
+          },
+          "NMI_arithmetic": {
+            "mean": 0.21652687354208072,
+            "sample_sd_ddof1": 0.02058128657944665
+          },
+          "RI": {
+            "mean": 0.7534070038271719,
+            "sample_sd_ddof1": 0.004224500652340308
+          },
+          "ACC": {
+            "mean": 0.38461538461538464,
+            "sample_sd_ddof1": 0.029843678638626508
+          }
+        }
+      },
+      "ShapesAll": {
+        "ARI_mean": 0.3783524440935404,
+        "ARI_sd": 0.016558238669136697,
+        "NMI_mean": 0.7189632122533671,
+        "metrics": {
+          "ARI": {
+            "mean": 0.3783524440935404,
+            "sample_sd_ddof1": 0.016558238669136697
+          },
+          "NMI_arithmetic": {
+            "mean": 0.7189632122533671,
+            "sample_sd_ddof1": 0.005356941657672213
+          },
+          "RI": {
+            "mean": 0.9761139838754518,
+            "sample_sd_ddof1": 0.00147622417089389
+          },
+          "ACC": {
+            "mean": 0.5181666666666667,
+            "sample_sd_ddof1": 0.01256096245427783
+          }
+        }
+      },
+      "SemgHandMovementCh2": {
+        "ARI_mean": 0.10952193113003986,
+        "ARI_sd": 0.013031190557297435,
+        "NMI_mean": 0.19453845192996752,
+        "metrics": {
+          "ARI": {
+            "mean": 0.10952193113003986,
+            "sample_sd_ddof1": 0.013031190557297435
+          },
+          "NMI_arithmetic": {
+            "mean": 0.19453845192996752,
+            "sample_sd_ddof1": 0.016070190205579475
+          },
+          "RI": {
+            "mean": 0.7360222469410456,
+            "sample_sd_ddof1": 0.012179710213044951
+          },
+          "ACC": {
+            "mean": 0.3491111111111111,
+            "sample_sd_ddof1": 0.013752665286014041
+          }
+        }
+      },
+      "CinCECGTorso": {
+        "ARI_mean": 0.17064151172267186,
+        "ARI_sd": 0.027043710728307482,
+        "NMI_mean": 0.274685651487635,
+        "metrics": {
+          "ARI": {
+            "mean": 0.17064151172267186,
+            "sample_sd_ddof1": 0.027043710728307482
+          },
+          "NMI_arithmetic": {
+            "mean": 0.274685651487635,
+            "sample_sd_ddof1": 0.018167161590339966
+          },
+          "RI": {
+            "mean": 0.679564263665148,
+            "sample_sd_ddof1": 0.01762293962841894
+          },
+          "ACC": {
+            "mean": 0.4459154929577465,
+            "sample_sd_ddof1": 0.009146800291051069
+          }
+        }
+      },
+      "StarLightCurves": {
+        "ARI_mean": 0.5052886641515099,
+        "ARI_sd": 0.004016265000914412,
+        "NMI_mean": 0.6047455319453584,
+        "metrics": {
+          "ARI": {
+            "mean": 0.5052886641515099,
+            "sample_sd_ddof1": 0.004016265000914412
+          },
+          "NMI_arithmetic": {
+            "mean": 0.6047455319453584,
+            "sample_sd_ddof1": 0.0024544155946868654
+          },
+          "RI": {
+            "mean": 0.7633641481521778,
+            "sample_sd_ddof1": 0.0017266277617880145
+          },
+          "ACC": {
+            "mean": 0.7478345604157645,
+            "sample_sd_ddof1": 0.003890265098142437
+          }
+        }
+      }
+    },
+    "macro_ARI": 0.27668369681245675,
+    "mean_ARI_sd": 0.025115290573108733,
+    "collapsed_fits": 0,
+    "median_fit_seconds": 216.93642979999998
+  },
+  "alternatives": {
+    "LoSTer-NoResoftmax": {
+      "datasets": {
+        "SyntheticControl": {
+          "ARI_mean": 0.5142502323228623,
+          "ARI_sd": 0.07770839187729554,
+          "NMI_mean": 0.6865351215097876,
+          "metrics": {
+            "ARI": {
+              "mean": 0.5142502323228623,
+              "sample_sd_ddof1": 0.07770839187729554
+            },
+            "NMI_arithmetic": {
+              "mean": 0.6865351215097876,
+              "sample_sd_ddof1": 0.07372975482642818
+            },
+            "RI": {
+              "mean": 0.8573010573177519,
+              "sample_sd_ddof1": 0.01770688987445018
+            },
+            "ACC": {
+              "mean": 0.6456666666666666,
+              "sample_sd_ddof1": 0.08223104307039067
+            }
+          }
+        },
+        "Beef": {
+          "ARI_mean": 0.09818220327016726,
+          "ARI_sd": 0.022232213649309728,
+          "NMI_mean": 0.2804537802453647,
+          "metrics": {
+            "ARI": {
+              "mean": 0.09818220327016726,
+              "sample_sd_ddof1": 0.022232213649309728
+            },
+            "NMI_arithmetic": {
+              "mean": 0.2804537802453647,
+              "sample_sd_ddof1": 0.017778287456329516
+            },
+            "RI": {
+              "mean": 0.6830508474576271,
+              "sample_sd_ddof1": 0.02442808758093613
+            },
+            "ACC": {
+              "mean": 0.37,
+              "sample_sd_ddof1": 0.03613247231446468
+            }
+          }
+        },
+        "ECG200": {
+          "ARI_mean": 0.2189739190912082,
+          "ARI_sd": 0.05155236156733817,
+          "NMI_mean": 0.1299637186943768,
+          "metrics": {
+            "ARI": {
+              "mean": 0.2189739190912082,
+              "sample_sd_ddof1": 0.05155236156733817
+            },
+            "NMI_arithmetic": {
+              "mean": 0.1299637186943768,
+              "sample_sd_ddof1": 0.03759161345482886
+            },
+            "RI": {
+              "mean": 0.6189849246231156,
+              "sample_sd_ddof1": 0.02132289359509862
+            },
+            "ACC": {
+              "mean": 0.745,
+              "sample_sd_ddof1": 0.02291287847477922
+            }
+          }
+        },
+        "OSULeaf": {
+          "ARI_mean": 0.1505968945440156,
+          "ARI_sd": 0.0152292519026596,
+          "NMI_mean": 0.21175903914045813,
+          "metrics": {
+            "ARI": {
+              "mean": 0.1505968945440156,
+              "sample_sd_ddof1": 0.0152292519026596
+            },
+            "NMI_arithmetic": {
+              "mean": 0.21175903914045813,
+              "sample_sd_ddof1": 0.019418827312643477
+            },
+            "RI": {
+              "mean": 0.7535506510296427,
+              "sample_sd_ddof1": 0.004141229309826162
+            },
+            "ACC": {
+              "mean": 0.38144796380090495,
+              "sample_sd_ddof1": 0.0286447140914324
+            }
+          }
+        },
+        "ShapesAll": {
+          "ARI_mean": 0.3741110057059832,
+          "ARI_sd": 0.021227816926060128,
+          "NMI_mean": 0.7047268105730276,
+          "metrics": {
+            "ARI": {
+              "mean": 0.3741110057059832,
+              "sample_sd_ddof1": 0.021227816926060128
+            },
+            "NMI_arithmetic": {
+              "mean": 0.7047268105730276,
+              "sample_sd_ddof1": 0.008205437167896347
+            },
+            "RI": {
+              "mean": 0.9775240478176258,
+              "sample_sd_ddof1": 0.0015779691982080546
+            },
+            "ACC": {
+              "mean": 0.5101666666666667,
+              "sample_sd_ddof1": 0.014450586301062128
+            }
+          }
+        },
+        "SemgHandMovementCh2": {
+          "ARI_mean": 0.10992358153035048,
+          "ARI_sd": 0.025542467642996045,
+          "NMI_mean": 0.1864826477773863,
+          "metrics": {
+            "ARI": {
+              "mean": 0.10992358153035048,
+              "sample_sd_ddof1": 0.025542467642996045
+            },
+            "NMI_arithmetic": {
+              "mean": 0.1864826477773863,
+              "sample_sd_ddof1": 0.02919189072396833
+            },
+            "RI": {
+              "mean": 0.7406674082313682,
+              "sample_sd_ddof1": 0.010347159663935344
+            },
+            "ACC": {
+              "mean": 0.346,
+              "sample_sd_ddof1": 0.026534394171981283
+            }
+          }
+        },
+        "CinCECGTorso": {
+          "ARI_mean": 0.1760480669358452,
+          "ARI_sd": 0.018325203891558183,
+          "NMI_mean": 0.27458060956044633,
+          "metrics": {
+            "ARI": {
+              "mean": 0.1760480669358452,
+              "sample_sd_ddof1": 0.018325203891558183
+            },
+            "NMI_arithmetic": {
+              "mean": 0.27458060956044633,
+              "sample_sd_ddof1": 0.015343677876373533
+            },
+            "RI": {
+              "mean": 0.6837282752186126,
+              "sample_sd_ddof1": 0.012125783681348366
+            },
+            "ACC": {
+              "mean": 0.45,
+              "sample_sd_ddof1": 0.01166763487731047
+            }
+          }
+        },
+        "StarLightCurves": {
+          "ARI_mean": 0.5002241218385566,
+          "ARI_sd": 0.005524701232389418,
+          "NMI_mean": 0.608059526000905,
+          "metrics": {
+            "ARI": {
+              "mean": 0.5002241218385566,
+              "sample_sd_ddof1": 0.005524701232389418
+            },
+            "NMI_arithmetic": {
+              "mean": 0.608059526000905,
+              "sample_sd_ddof1": 0.003831820853095033
+            },
+            "RI": {
+              "mean": 0.7611138167707493,
+              "sample_sd_ddof1": 0.0024769316351496546
+            },
+            "ACC": {
+              "mean": 0.7425075790385448,
+              "sample_sd_ddof1": 0.006036781853144034
+            }
+          }
+        }
+      },
+      "macro_ARI": 0.2677887531548736,
+      "mean_ARI_sd": 0.029667801086200853,
+      "collapsed_fits": 0,
+      "median_fit_seconds": 226.24334195,
+      "eligible": false,
+      "delta_by_dataset": {
+        "SyntheticControl": -0.060684793186299935,
+        "Beef": -0.009118294129046786,
+        "ECG200": 0.00444754008553655,
+        "OSULeaf": -0.002306226943828593,
+        "ShapesAll": -0.004241438387557195,
+        "SemgHandMovementCh2": 0.0004016504003106214,
+        "CinCECGTorso": 0.005406555213173347,
+        "StarLightCurves": -0.00506454231295328
+      },
+      "macro_delta": -0.008894943657583159,
+      "macro_NMI_delta": -0.009796313480160364,
+      "positive_datasets": 3,
+      "quality_route": false,
+      "stability_route": false,
+      "safety_gate": false,
+      "dominated": true
+    },
+    "LoSTer-AlignedInit": {
+      "datasets": {
+        "SyntheticControl": {
+          "ARI_mean": 0.5743184776675591,
+          "ARI_sd": 0.05569717876438003,
+          "NMI_mean": 0.7323987356569222,
+          "metrics": {
+            "ARI": {
+              "mean": 0.5743184776675591,
+              "sample_sd_ddof1": 0.05569717876438003
+            },
+            "NMI_arithmetic": {
+              "mean": 0.7323987356569222,
+              "sample_sd_ddof1": 0.05834110500767744
+            },
+            "RI": {
+              "mean": 0.870062326099054,
+              "sample_sd_ddof1": 0.016462781452937267
+            },
+            "ACC": {
+              "mean": 0.6903333333333334,
+              "sample_sd_ddof1": 0.09651856470821214
+            }
+          }
+        },
+        "Beef": {
+          "ARI_mean": 0.10730049739921405,
+          "ARI_sd": 0.020910625307545026,
+          "NMI_mean": 0.292811738703271,
+          "metrics": {
+            "ARI": {
+              "mean": 0.10730049739921405,
+              "sample_sd_ddof1": 0.020910625307545026
+            },
+            "NMI_arithmetic": {
+              "mean": 0.292811738703271,
+              "sample_sd_ddof1": 0.019684929966216146
+            },
+            "RI": {
+              "mean": 0.6796610169491525,
+              "sample_sd_ddof1": 0.028882713070330537
+            },
+            "ACC": {
+              "mean": 0.37333333333333335,
+              "sample_sd_ddof1": 0.03836954811073781
+            }
+          }
+        },
+        "ECG200": {
+          "ARI_mean": 0.21452637900567165,
+          "ARI_sd": 0.04865697018470506,
+          "NMI_mean": 0.12641559452886394,
+          "metrics": {
+            "ARI": {
+              "mean": 0.21452637900567165,
+              "sample_sd_ddof1": 0.04865697018470506
+            },
+            "NMI_arithmetic": {
+              "mean": 0.12641559452886394,
+              "sample_sd_ddof1": 0.03522276551800008
+            },
+            "RI": {
+              "mean": 0.6169346733668342,
+              "sample_sd_ddof1": 0.020049117737256504
+            },
+            "ACC": {
+              "mean": 0.743,
+              "sample_sd_ddof1": 0.021679483388678818
+            }
+          }
+        },
+        "OSULeaf": {
+          "ARI_mean": 0.15176644501239583,
+          "ARI_sd": 0.017641180681534935,
+          "NMI_mean": 0.2139582662363931,
+          "metrics": {
+            "ARI": {
+              "mean": 0.15176644501239583,
+              "sample_sd_ddof1": 0.017641180681534935
+            },
+            "NMI_arithmetic": {
+              "mean": 0.2139582662363931,
+              "sample_sd_ddof1": 0.021421297902239966
+            },
+            "RI": {
+              "mean": 0.7529719580139749,
+              "sample_sd_ddof1": 0.004577044029789417
+            },
+            "ACC": {
+              "mean": 0.383710407239819,
+              "sample_sd_ddof1": 0.031577097416050505
+            }
+          }
+        },
+        "ShapesAll": {
+          "ARI_mean": 0.3787079808457758,
+          "ARI_sd": 0.01673635534852756,
+          "NMI_mean": 0.7190511109131716,
+          "metrics": {
+            "ARI": {
+              "mean": 0.3787079808457758,
+              "sample_sd_ddof1": 0.01673635534852756
+            },
+            "NMI_arithmetic": {
+              "mean": 0.7190511109131716,
+              "sample_sd_ddof1": 0.00535444084620246
+            },
+            "RI": {
+              "mean": 0.9761345565749235,
+              "sample_sd_ddof1": 0.0014705456421597756
+            },
+            "ACC": {
+              "mean": 0.5185,
+              "sample_sd_ddof1": 0.013022416570411697
+            }
+          }
+        },
+        "SemgHandMovementCh2": {
+          "ARI_mean": 0.11002873923910592,
+          "ARI_sd": 0.017855751237962028,
+          "NMI_mean": 0.19655441459749198,
+          "metrics": {
+            "ARI": {
+              "mean": 0.11002873923910592,
+              "sample_sd_ddof1": 0.017855751237962028
+            },
+            "NMI_arithmetic": {
+              "mean": 0.19655441459749198,
+              "sample_sd_ddof1": 0.021318965620605684
+            },
+            "RI": {
+              "mean": 0.735902607835867,
+              "sample_sd_ddof1": 0.013529692071590797
+            },
+            "ACC": {
+              "mean": 0.34755555555555556,
+              "sample_sd_ddof1": 0.01752247234373725
+            }
+          }
+        },
+        "CinCECGTorso": {
+          "ARI_mean": 0.1705790678879406,
+          "ARI_sd": 0.02769448736116379,
+          "NMI_mean": 0.27540015465982665,
+          "metrics": {
+            "ARI": {
+              "mean": 0.1705790678879406,
+              "sample_sd_ddof1": 0.02769448736116379
+            },
+            "NMI_arithmetic": {
+              "mean": 0.27540015465982665,
+              "sample_sd_ddof1": 0.020037689729241515
+            },
+            "RI": {
+              "mean": 0.6794737416748553,
+              "sample_sd_ddof1": 0.01792283363906262
+            },
+            "ACC": {
+              "mean": 0.44521126760563384,
+              "sample_sd_ddof1": 0.009173869898299743
+            }
+          }
+        },
+        "StarLightCurves": {
+          "ARI_mean": 0.5050448583307577,
+          "ARI_sd": 0.0032600942494839537,
+          "NMI_mean": 0.6049454681041347,
+          "metrics": {
+            "ARI": {
+              "mean": 0.5050448583307577,
+              "sample_sd_ddof1": 0.0032600942494839537
+            },
+            "NMI_arithmetic": {
+              "mean": 0.6049454681041347,
+              "sample_sd_ddof1": 0.0020722928829041056
+            },
+            "RI": {
+              "mean": 0.7632707540442838,
+              "sample_sd_ddof1": 0.0014145220908411656
+            },
+            "ACC": {
+              "mean": 0.7476396708531832,
+              "sample_sd_ddof1": 0.0032258872624378204
+            }
+          }
+        }
+      },
+      "macro_ARI": 0.2765340556735526,
+      "mean_ARI_sd": 0.026056580391912797,
+      "collapsed_fits": 0,
+      "median_fit_seconds": 213.86273125,
+      "eligible": false,
+      "delta_by_dataset": {
+        "SyntheticControl": -0.0006165478416031434,
+        "Beef": 0.0,
+        "ECG200": 0.0,
+        "OSULeaf": -0.0011366764754483505,
+        "ShapesAll": 0.00035553675223537473,
+        "SemgHandMovementCh2": 0.0005068081090660592,
+        "CinCECGTorso": -6.24438347312517e-05,
+        "StarLightCurves": -0.00024380582075211876
+      },
+      "macro_delta": -0.0001496411389041788,
+      "macro_NMI_delta": 7.546525712999116e-05,
+      "positive_datasets": 2,
+      "quality_route": false,
+      "stability_route": false,
+      "safety_gate": true,
+      "dominated": false
+    }
+  },
+  "numerical_recommendation": "LoSTer-Legacy-Clean",
+  "conceptual_hypothesis_review_required": true,
+  "method_automatically_frozen": false,
+  "threshold_sensitivity": "Describe 0/.005/.02 mean-gain sensitivity without changing registered decision"
+}
