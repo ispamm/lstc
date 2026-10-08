@@ -1,0 +1,2040 @@
+{
+  "schema_version": "1.0",
+  "audit_date": "2026-10-08",
+  "scope": "SOURCE / PROTOCOL audit; no baseline training or environment installation",
+  "authorization": "NOT AUTHORIZED",
+  "frozen_loster": {
+    "name": "LoSTer-Legacy-Clean + MonotoneWarp",
+    "commit": "cab7b6ffecab92bfcf6fe46e73e32dc0c040ee59",
+    "tag": "loster-2026-frozen",
+    "branch": "revision-2026",
+    "remote": "origin",
+    "specification": "analysis/experiments/frozen-method-2026.json",
+    "specification_sha256": "89ace607dbb10392733974753bc13275de9a41bc1a668f95fa1ed47acd030a1e",
+    "provenance_note": "source_committed:false and parent_git_sha describe validation-time provenance. Stage A subsequently committed the freeze; no frozen bytes rewritten."
+  },
+  "dataset_panel": {
+    "manifest": "experiments_new/loster2026/configs/final/benchmark.json",
+    "manifest_sha256": "be753c357d5176101c9d40ad55e68eb66e263243d5776b495455b945c9d0ec7e",
+    "core40": [
+      "ACSF1",
+      "Adiac",
+      "ArrowHead",
+      "Beef",
+      "CBF",
+      "Car",
+      "CricketX",
+      "CricketY",
+      "CricketZ",
+      "DiatomSizeReduction",
+      "DistalPhalanxOutlineAgeGroup",
+      "DistalPhalanxTW",
+      "ECG200",
+      "ECGFiveDays",
+      "EOGVerticalSignal",
+      "FaceFour",
+      "FiftyWords",
+      "Fish",
+      "Fungi",
+      "GunPointMaleVersusFemale",
+      "GunPointOldVersusYoung",
+      "HouseTwenty",
+      "LargeKitchenAppliances",
+      "MiddlePhalanxOutlineAgeGroup",
+      "MiddlePhalanxTW",
+      "OSULeaf",
+      "PigAirwayPressure",
+      "PigArtPressure",
+      "PigCVP",
+      "Plane",
+      "PowerCons",
+      "ProximalPhalanxTW",
+      "SemgHandMovementCh2",
+      "ShapeletSim",
+      "ShapesAll",
+      "SwedishLeaf",
+      "SyntheticControl",
+      "ToeSegmentation1",
+      "Trace",
+      "WordSynonyms"
+    ],
+    "extended44": [
+      "ACSF1",
+      "Adiac",
+      "ArrowHead",
+      "Beef",
+      "CBF",
+      "Car",
+      "CinCECGTorso",
+      "CricketX",
+      "CricketY",
+      "CricketZ",
+      "DiatomSizeReduction",
+      "DistalPhalanxOutlineAgeGroup",
+      "DistalPhalanxTW",
+      "ECG200",
+      "ECGFiveDays",
+      "EOGVerticalSignal",
+      "FaceFour",
+      "FiftyWords",
+      "Fish",
+      "Fungi",
+      "GunPointMaleVersusFemale",
+      "GunPointOldVersusYoung",
+      "HouseTwenty",
+      "LargeKitchenAppliances",
+      "MiddlePhalanxOutlineAgeGroup",
+      "MiddlePhalanxTW",
+      "MixedShapesRegularTrain",
+      "MixedShapesSmallTrain",
+      "OSULeaf",
+      "PigAirwayPressure",
+      "PigArtPressure",
+      "PigCVP",
+      "Plane",
+      "PowerCons",
+      "ProximalPhalanxTW",
+      "SemgHandMovementCh2",
+      "ShapeletSim",
+      "ShapesAll",
+      "StarLightCurves",
+      "SwedishLeaf",
+      "SyntheticControl",
+      "ToeSegmentation1",
+      "Trace",
+      "WordSynonyms"
+    ],
+    "development8": [
+      "SyntheticControl",
+      "Beef",
+      "ECG200",
+      "OSULeaf",
+      "ShapesAll",
+      "SemgHandMovementCh2",
+      "CinCECGTorso",
+      "StarLightCurves"
+    ],
+    "final36": [
+      "ACSF1",
+      "Adiac",
+      "ArrowHead",
+      "CBF",
+      "Car",
+      "CricketX",
+      "CricketY",
+      "CricketZ",
+      "DiatomSizeReduction",
+      "DistalPhalanxOutlineAgeGroup",
+      "DistalPhalanxTW",
+      "ECGFiveDays",
+      "EOGVerticalSignal",
+      "FaceFour",
+      "FiftyWords",
+      "Fish",
+      "Fungi",
+      "GunPointMaleVersusFemale",
+      "GunPointOldVersusYoung",
+      "HouseTwenty",
+      "LargeKitchenAppliances",
+      "MiddlePhalanxOutlineAgeGroup",
+      "MiddlePhalanxTW",
+      "MixedShapesRegularTrain",
+      "MixedShapesSmallTrain",
+      "PigAirwayPressure",
+      "PigArtPressure",
+      "PigCVP",
+      "Plane",
+      "PowerCons",
+      "ProximalPhalanxTW",
+      "ShapeletSim",
+      "SwedishLeaf",
+      "ToeSegmentation1",
+      "Trace",
+      "WordSynonyms"
+    ],
+    "note": "Manifest is design-only, selected_variant=null; use tagged frozen specification without modifying this file."
+  },
+  "source_storage": "G:/Articoli/Articoli da Completare/LoSTer 2026/baselines/src",
+  "environment_storage": "G:/Articoli/Articoli da Completare/LoSTer 2026/baselines/envs",
+  "common_protocol": {
+    "pool": "TRAIN then TEST, header=None, all canonical records; same per-series population z-normalization as LoSTer; no silent missing/ragged repair or record deletion",
+    "known_k": "from trusted class-count metadata; fit worker receives k, not ground-truth arrays",
+    "evaluator": "experiments_new/loster2026/src/loster2026/metrics.py",
+    "evaluator_sha256": "8c9dc5afc5ebcd9955c56787311e67c43ada7ccfe97d387f1ec6fae0910375b1",
+    "metrics": [
+      "ARI",
+      "arithmetic NMI",
+      "RI",
+      "Hungarian ACC"
+    ],
+    "prediction_columns": [
+      "sample_id",
+      "predicted_cluster",
+      "seed",
+      "dataset",
+      "method",
+      "run_id"
+    ],
+    "sample_id": "dataset/TRAIN/zero_based_row or dataset/TEST/zero_based_row",
+    "cpu_threads": 1,
+    "final_seeds": [
+      100,
+      101,
+      102,
+      103,
+      104
+    ],
+    "phase_seed": "uint32(first 8 hex digits of SHA256 UTF8 'loster2026-baseline-v1|method_id|dataset|root_seed|phase'); preserve explicitly native fixed constants, e.g FCACC center seed0",
+    "calibration_ceiling": {
+      "global_configurations": 3,
+      "tasks": [
+        "SyntheticControl",
+        "Beef",
+        "ECG200",
+        "OSULeaf",
+        "ShapesAll",
+        "SemgHandMovementCh2",
+        "CinCECGTorso",
+        "StarLightCurves"
+      ],
+      "seeds": [
+        0,
+        1,
+        2
+      ],
+      "automatic": false
+    },
+    "timing": "canonical numeric input before normalization through complete ordered predictions; all per-run scientific stages and real per-fit compilation; exclude downloads; separate operational overhead",
+    "timeout_policy": "proposed global 24h per dataset/method/seed; freeze before accuracy; audit08 failure policy",
+    "status": "contract design only; adapter/ID/timing/statistical integration not implemented",
+    "statistical_branch": {
+      "reference": "LoSTer-Legacy-Clean historical warp",
+      "complete_support_method_count": 13,
+      "control_contrasts": 12,
+      "reason": "Audit04 changed-method branch applies to MonotoneWarp; design only; script/analysis not run"
+    }
+  },
+  "decision_summary": {
+    "retained": 11,
+    "moved": 0,
+    "removed": 0,
+    "ready_for_implementation": 3,
+    "ready_with_conditions": 5,
+    "blocked": 3,
+    "development_calibration_required": [
+      "TFMCC"
+    ],
+    "conditional_calibration_after_source_resolution": [
+      "CDCC batch rule",
+      "DTCC recipe/resources",
+      "CKM reproduction recipe"
+    ],
+    "likely_problematic_gtx1080": [
+      "DTCC-2023",
+      "TFMCC"
+    ],
+    "wave1": [
+      "Euclidean k-means",
+      "k-Shape",
+      "KASBA",
+      "R-Clustering (conditions)",
+      "FASA (conditions)"
+    ],
+    "wave2": [
+      "TS2Vec + k-means",
+      "FCACC",
+      "TFMCC (conditions)"
+    ],
+    "wave3": [
+      "CKM",
+      "DTCC-2023",
+      "CDCC"
+    ],
+    "no_smokes_performed": true
+  },
+  "baselines": [
+    {
+      "method_id": "euclidean_kmeans",
+      "canonical_name": "Euclidean k-means",
+      "paper": {
+        "title": "Least squares quantization in PCM",
+        "authors": [
+          "Stuart P. Lloyd"
+        ]
+      },
+      "venue": "IEEE Transactions on Information Theory 28(2), 129-137",
+      "year": 1982,
+      "doi": "10.1109/TIT.1982.1056489",
+      "paper_url": "https://doi.org/10.1109/TIT.1982.1056489",
+      "source_url": "https://github.com/scikit-learn/scikit-learn",
+      "repository_owner": "scikit-learn",
+      "source_commit": "719c0c6036ac99d45ffb45ed7c8b4e4b221384b5",
+      "source_status": "THIRD-PARTY",
+      "license": "BSD-3-Clause",
+      "source_tag": "1.4.1.post1",
+      "paper_code_correspondence": "HIGH CONFIDENCE MATCH",
+      "environment_summary": {
+        "status": "DESIGN ONLY; not installed or verified",
+        "python": "3.9/3.10",
+        "framework": "scikit-learn1.4.1.post1",
+        "cuda": "none; CPU",
+        "main_dependencies": [
+          "numpy",
+          "scipy",
+          "scikit-learn==1.4.1.post1",
+          "threadpoolctl"
+        ],
+        "windows_compatibility": "native wheels",
+        "conflicts_with_loster": "low; separate env preferred",
+        "note": "Canonical maintained library; not original Lloyd author code. Explicit n_init10 is benchmark convention, not auto default."
+      },
+      "entry_points": [
+        "sklearn/cluster/_kmeans.py:KMeans"
+      ],
+      "known_k": {
+        "required": true,
+        "source": "trusted class-count metadata",
+        "target_labels_in_fit": false
+      },
+      "native_protocol": {
+        "datasets": "no UCR panel in 1982 paper",
+        "pooling": "common pooled benchmark adaptation",
+        "normalization": "common per-series z-score",
+        "missing_values": "finite numeric inputs required",
+        "augmentation": "none"
+      },
+      "parameter_inventory": {
+        "METHOD-INTRINSIC": [
+          "squared Euclidean objective",
+          "Lloyd refinement"
+        ],
+        "GLOBAL DEFAULT": {
+          "init": "k-means++",
+          "n_init": 10,
+          "max_iter": 300,
+          "tol": 0.0001,
+          "algorithm": "lloyd",
+          "copy_x": true
+        },
+        "DATASET-DEPENDENT BUT LABEL-FREE": [
+          "k"
+        ],
+        "LABEL-TUNED": [],
+        "UNCLEAR": []
+      },
+      "label_use": {
+        "training": "X and k only",
+        "checkpoint_selection": "minimum inertia among internal restarts; no labels",
+        "published_hyperparameters": "no target tuning",
+        "common_rule": "known k only; fixed or unlabeled stopping; no Final36 tuning"
+      },
+      "native_metrics": {
+        "estimator": "no native metric runner; library ARI/RI and arithmetic-default NMI; ACC central"
+      },
+      "prediction_export": "labels_ in original row order; save centers and IDs",
+      "adaptation_class": "NON-SCIENTIFIC ADAPTER",
+      "hyperparameter_policy": "USE PUBLISHED DEFAULTS",
+      "readiness": "READY FOR IMPLEMENTATION",
+      "blockers": [
+        "Future environment, Development8, export and timing smoke pending"
+      ],
+      "randomness": {
+        "classification": "STOCHASTIC",
+        "sources": [
+          "centroid initialization"
+        ],
+        "published_repetitions": "paper has no UCR repetition protocol; five outer benchmark runs, ten internal initializations each",
+        "final_seeds": [
+          100,
+          101,
+          102,
+          103,
+          104
+        ]
+      },
+      "resource_risk": {
+        "gpu_vram": "LOW",
+        "cpu_ram": "MODERATE",
+        "runtime": "MODERATE",
+        "sequence_length": "MODERATE",
+        "batch_constraints": "full-batch Lloyd",
+        "evidence": "qualitative static inference; no measured timing/memory"
+      },
+      "tier_decision": "KEEP TIER 1",
+      "smoke_validated": false,
+      "evidence": [
+        "https://doi.org/10.1109/TIT.1982.1056489",
+        "https://github.com/scikit-learn/scikit-learn/tree/719c0c6036ac99d45ffb45ed7c8b4e4b221384b5",
+        "https://github.com/scikit-learn/scikit-learn/blob/719c0c6036ac99d45ffb45ed7c8b4e4b221384b5/sklearn/cluster/_kmeans.py"
+      ]
+    },
+    {
+      "method_id": "kshape",
+      "canonical_name": "k-Shape",
+      "paper": {
+        "title": "k-Shape: Efficient and Accurate Clustering of Time Series",
+        "authors": [
+          "John Paparrizos",
+          "Luis Gravano"
+        ]
+      },
+      "venue": "ACM SIGMOD,1855-1870",
+      "year": 2015,
+      "doi": "10.1145/2723372.2737793",
+      "paper_url": "https://www.paparrizos.org/papers/PaparrizosSIGMOD15.pdf",
+      "source_url": "https://github.com/TheDatumOrg/kshape-python",
+      "repository_owner": "TheDatumOrg",
+      "source_commit": "778e735624d15848556e4d23fe38c321d453937a",
+      "source_status": "AUTHOR-MAINTAINED",
+      "license": "MIT",
+      "source_tag": "package1.0.6; no corresponding Git tag",
+      "paper_code_correspondence": "HIGH CONFIDENCE MATCH",
+      "environment_summary": {
+        "status": "DESIGN ONLY; not installed or verified",
+        "python": "3.9/3.10",
+        "framework": "NumPy CPU",
+        "cuda": "none",
+        "main_dependencies": [
+          "numpy",
+          "scikit-learn imported but omitted from install_requires"
+        ],
+        "windows_compatibility": "spawn-safe main guard needed",
+        "conflicts_with_loster": "low; avoid optional CuPy module",
+        "note": "Import CPU core directly; n_jobs1; pin numeric versions after smoke."
+      },
+      "entry_points": [
+        "kshape/core.py:KShapeClusteringCPU.fit/predict"
+      ],
+      "known_k": {
+        "required": true,
+        "source": "trusted class-count metadata",
+        "target_labels_in_fit": false
+      },
+      "native_protocol": {
+        "datasets": "48 UCR tasks in original2015 paper, including then-unreleased Insect; not85",
+        "pooling": "TRAIN+TEST",
+        "normalization": "series z-score plus native centroid normalization",
+        "missing_values": "helper nan_to_num is not authorization to impute benchmark",
+        "augmentation": "none"
+      },
+      "parameter_inventory": {
+        "METHOD-INTRINSIC": [
+          "FFT SBD normalized cross-correlation",
+          "leading eigenvector shape extraction"
+        ],
+        "GLOBAL DEFAULT": {
+          "max_iter": 100,
+          "centroid_init": "zero",
+          "n_jobs": 1
+        },
+        "DATASET-DEPENDENT BUT LABEL-FREE": [
+          "k"
+        ],
+        "LABEL-TUNED": [],
+        "UNCLEAR": []
+      },
+      "label_use": {
+        "training": "no target labels",
+        "checkpoint_selection": "stable assignments/max100",
+        "published_hyperparameters": "no target tuning required",
+        "common_rule": "known k only; fixed or unlabeled stopping; no Final36 tuning"
+      },
+      "native_metrics": {
+        "paper": "RI pair agreement",
+        "core": "no native metric computation"
+      },
+      "prediction_export": "labels_ and centers; shape N,L,1; preserve IDs",
+      "adaptation_class": "NON-SCIENTIFIC ADAPTER",
+      "hyperparameter_policy": "USE PUBLISHED DEFAULTS",
+      "readiness": "READY FOR IMPLEMENTATION",
+      "blockers": [
+        "Future Windows multiprocessing/import/Development8/export/timing smoke"
+      ],
+      "randomness": {
+        "classification": "STOCHASTIC",
+        "sources": [
+          "NumPy random partition",
+          "empty-cluster recovery"
+        ],
+        "published_repetitions": 10,
+        "final_seeds": [
+          100,
+          101,
+          102,
+          103,
+          104
+        ]
+      },
+      "resource_risk": {
+        "gpu_vram": "LOW",
+        "cpu_ram": "HIGH",
+        "runtime": "HIGH",
+        "sequence_length": "HIGH",
+        "batch_constraints": "L xL scatter and eigendecomposition; pool copy overhead",
+        "evidence": "qualitative static inference; no measured timing/memory"
+      },
+      "tier_decision": "KEEP TIER 1",
+      "smoke_validated": false,
+      "evidence": [
+        "https://www.paparrizos.org/papers/PaparrizosSIGMOD15.pdf",
+        "https://github.com/TheDatumOrg/kshape-python/tree/778e735624d15848556e4d23fe38c321d453937a",
+        "https://github.com/TheDatumOrg/kshape-python/blob/778e735624d15848556e4d23fe38c321d453937a/kshape/core.py"
+      ]
+    },
+    {
+      "method_id": "ckm",
+      "canonical_name": "CKM",
+      "paper": {
+        "title": "Deep Clustering with Concrete K-Means",
+        "authors": [
+          "Boyan Gao",
+          "Yongxin Yang",
+          "Henry Gouk",
+          "Timothy M. Hospedales"
+        ]
+      },
+      "venue": "IEEE ICASSP,4252-4256",
+      "year": 2020,
+      "doi": "10.1109/ICASSP40776.2020.9053265",
+      "paper_url": "https://www.pure.ed.ac.uk/ws/files/134695608/Deep_Clustering_with_Concrete_GAO_DOA24012020_AFV.pdf",
+      "source_url": null,
+      "repository_owner": null,
+      "source_commit": null,
+      "source_status": "NO IMPLEMENTATION FOUND",
+      "license": "NOT ESTABLISHED",
+      "source_tag": null,
+      "paper_code_correspondence": "NOT ESTABLISHED",
+      "environment_summary": {
+        "status": "DESIGN ONLY; not installed or verified",
+        "python": "unknown",
+        "framework": "official implementation not found",
+        "cuda": "unknown",
+        "main_dependencies": [
+          "unknown"
+        ],
+        "windows_compatibility": "not established",
+        "conflicts_with_loster": "unknown",
+        "note": "Historical local CKM is third-party adaptation and not selected."
+      },
+      "entry_points": [],
+      "known_k": {
+        "required": true,
+        "source": "trusted class-count metadata",
+        "target_labels_in_fit": false
+      },
+      "native_protocol": {
+        "datasets": [
+          "MNIST",
+          "USPS",
+          "20 Newsgroups"
+        ],
+        "pooling": "no published UCR protocol",
+        "normalization": "image data /2000-word text tf-idf",
+        "missing_values": "not established",
+        "augmentation": "do not import LoSTer augmentation"
+      },
+      "parameter_inventory": {
+        "METHOD-INTRINSIC": [
+          "reconstruction + centroid distortion",
+          "hard forward/relaxed backward Gumbel Concrete",
+          "joint learned centroids"
+        ],
+        "GLOBAL DEFAULT": {
+          "image_encoder": [
+            500,
+            500,
+            2000,
+            10
+          ],
+          "text_encoder": [
+            250,
+            100,
+            20
+          ]
+        },
+        "DATASET-DEPENDENT BUT LABEL-FREE": [
+          "input dimension"
+        ],
+        "LABEL-TUNED": [],
+        "UNCLEAR": [
+          "optimizer",
+          "epochs",
+          "batch",
+          "lambda",
+          "sigma",
+          "temperature schedule",
+          "center initialization",
+          "inference"
+        ]
+      },
+      "label_use": {
+        "training": "unsupervised objective/known k",
+        "checkpoint_selection": "not established without code",
+        "published_hyperparameters": "complete published recipe unknown",
+        "common_rule": "known k only; fixed or unlabeled stopping; no Final36 tuning"
+      },
+      "native_metrics": {
+        "paper": [
+          "ARI",
+          "NMI normalizer unknown",
+          "ACC called cluster purity; Hungarian definition not established"
+        ]
+      },
+      "prediction_export": "Not established until source/faithful recipe recovered",
+      "adaptation_class": "NOT A FAITHFUL REPRODUCTION",
+      "hyperparameter_policy": "NOT REPRODUCIBLE FAIRLY",
+      "readiness": "BLOCKED",
+      "blockers": [
+        "No official or author source identified by bounded primary/author-title repository search",
+        "Incomplete annealing/optimizer/init reproduction recipe",
+        "Local LoSTer CKM cannot be silently substituted"
+      ],
+      "randomness": {
+        "classification": "STOCHASTIC",
+        "sources": [
+          "Gumbel noise",
+          "initialization",
+          "stochastic optimization"
+        ],
+        "published_repetitions": 15,
+        "final_seeds": [
+          100,
+          101,
+          102,
+          103,
+          104
+        ]
+      },
+      "resource_risk": {
+        "gpu_vram": "UNKNOWN",
+        "cpu_ram": "UNKNOWN",
+        "runtime": "UNKNOWN",
+        "sequence_length": "UNKNOWN",
+        "batch_constraints": "unknown implementation",
+        "evidence": "qualitative static inference; no measured timing/memory"
+      },
+      "tier_decision": "KEEP TIER 1",
+      "smoke_validated": false,
+      "evidence": [
+        "https://www.pure.ed.ac.uk/ws/files/134695608/Deep_Clustering_with_Concrete_GAO_DOA24012020_AFV.pdf"
+      ]
+    },
+    {
+      "method_id": "dtcc_2023",
+      "canonical_name": "DTCC-2023",
+      "paper": {
+        "title": "Deep Temporal Contrastive Clustering",
+        "authors": [
+          "Ying Zhong",
+          "Dong Huang",
+          "Chang-Dong Wang"
+        ]
+      },
+      "venue": "Neural Processing Letters55,7869-7885",
+      "year": 2023,
+      "doi": "10.1007/s11063-023-11287-0",
+      "paper_url": "https://link.springer.com/article/10.1007/s11063-023-11287-0",
+      "source_url": "https://github.com/07zy/DTCC",
+      "repository_owner": "07zy",
+      "source_commit": "8531376c0d4efcbcf7a16fda881b219b3d306397",
+      "source_status": "OFFICIAL",
+      "license": "NOT STATED",
+      "source_tag": null,
+      "paper_code_correspondence": "PARTIAL / INCOMPLETE",
+      "environment_summary": {
+        "status": "DESIGN ONLY; not installed or verified",
+        "python": "README>=3.7; TF1 candidate3.7",
+        "framework": "README tensorflow-gpu2.4.0 conflicts with TF1/tf.contrib code",
+        "cuda": "unresolved; TF1.15/CUDA10/cuDNN7 candidate only",
+        "main_dependencies": [
+          "numpy1.19.5",
+          "scipy1.7.3",
+          "private TensorFlow RNN APIs",
+          "removed sklearn.utils.linear_assignment_"
+        ],
+        "windows_compatibility": "historical Windows TF1; closure unverified",
+        "conflicts_with_loster": "cannot run as declared or in LoSTer stack",
+        "note": "No automatic PyTorch port or tf.contrib replacement."
+      },
+      "entry_points": [
+        "dtcc.py:Config/build_model/run_model/main",
+        "utils.py",
+        "rnn_cell_extensions.py"
+      ],
+      "known_k": {
+        "required": true,
+        "source": "trusted class-count metadata",
+        "target_labels_in_fit": false
+      },
+      "native_protocol": {
+        "datasets": [
+          "Beef",
+          "DistalPhalanxOutlineAgeGroup",
+          "ECG200",
+          "ECGFiveDays",
+          "Meat",
+          "MoteStrain",
+          "OSULeaf",
+          "Plane",
+          "ProximalPhalanxOutlineAgeGroup",
+          "ProximalPhalanxTW"
+        ],
+        "pooling": "released TRAIN+TEST loader",
+        "normalization": "none in released np.loadtxt loader",
+        "missing_values": "not established",
+        "augmentation": "jitter.03 and denoising.1",
+        "paper_evidence": "2023 publisher metadata/code link; methods from author preprint arXiv2212.14366. Exact final-paper parameter equivalence unresolved."
+      },
+      "parameter_inventory": {
+        "METHOD-INTRINSIC": [
+          "bidirectional dilated GRU",
+          "recurrent decoder",
+          "reconstruction, spectral distribution, instance/cluster contrast"
+        ],
+        "GLOBAL DEFAULT": {
+          "units": [
+            100,
+            50,
+            50
+          ],
+          "dilations": [
+            1,
+            4,
+            16
+          ],
+          "embedding_dims": 400,
+          "lr": 0.005,
+          "epochs": 200,
+          "lambda_runner": 0.001,
+          "svd_interval_runner": 10,
+          "jitter_sigma": 0.03,
+          "noise_sigma": 0.1
+        },
+        "DATASET-DEPENDENT BUT LABEL-FREE": [
+          "runner B=N"
+        ],
+        "LABEL-TUNED": [
+          "paper units alternatives[100,50,50]/[50,30,30]; selection criterion unclear"
+        ],
+        "UNCLEAR": [
+          "preprint B=N/2 and SVD interval5 vs sourceN/10"
+        ]
+      },
+      "label_use": {
+        "training": "no labels in differentiable loss",
+        "checkpoint_selection": "separate best-NMI and best-RI epochs returned",
+        "published_hyperparameters": "architecture/parameter allocation unclear",
+        "common_rule": "known k only; fixed or unlabeled stopping; no Final36 tuning"
+      },
+      "native_metrics": {
+        "ARI": "sklearn adjusted_rand_score",
+        "NMI": "average_method omitted; sklearn unpinned",
+        "RI": "pair-count formula",
+        "ACC": "Hungarian via removed sklearn helper; label assumptions"
+      },
+      "prediction_export": "Native best metrics only; requires fixed-epoch fresh inference/state/IDs after source resolution",
+      "adaptation_class": "NOT A FAITHFUL REPRODUCTION",
+      "hyperparameter_policy": "NOT REPRODUCIBLE FAIRLY",
+      "readiness": "BLOCKED",
+      "blockers": [
+        "TF2.4 declaration incompatible with TF1 tf.contrib code",
+        "Cluster-level contrast term depends only on nontrainable F/F_aug and placeholder-fed NumPy SVD updates, with no gradient path to trainable encoder; no missing-feed runtime failure demonstrated",
+        "Recipe batch/SVD discrepancy and label-selected output",
+        "Full-pool resource demand; license unstated"
+      ],
+      "randomness": {
+        "classification": "STOCHASTIC",
+        "sources": [
+          "TF initialization",
+          "NumPy augmentation/noise/shuffle",
+          "unseeded KMeans"
+        ],
+        "published_repetitions": "not established; one unseeded native fit",
+        "final_seeds": [
+          100,
+          101,
+          102,
+          103,
+          104
+        ]
+      },
+      "resource_risk": {
+        "gpu_vram": "VERY HIGH",
+        "cpu_ram": "HIGH",
+        "runtime": "VERY HIGH",
+        "sequence_length": "VERY HIGH",
+        "batch_constraints": "released B=N; reducing batch changes spectral/contrastive computation",
+        "evidence": "qualitative static inference; no measured timing/memory"
+      },
+      "tier_decision": "KEEP TIER 1",
+      "smoke_validated": false,
+      "evidence": [
+        "https://link.springer.com/article/10.1007/s11063-023-11287-0",
+        "https://github.com/07zy/DTCC/tree/8531376c0d4efcbcf7a16fda881b219b3d306397",
+        "https://github.com/07zy/DTCC/blob/8531376c0d4efcbcf7a16fda881b219b3d306397/dtcc.py",
+        "https://github.com/07zy/DTCC/blob/8531376c0d4efcbcf7a16fda881b219b3d306397/utils.py",
+        "https://github.com/07zy/DTCC/blob/8531376c0d4efcbcf7a16fda881b219b3d306397/rnn_cell_extensions.py"
+      ]
+    },
+    {
+      "method_id": "cdcc",
+      "canonical_name": "CDCC",
+      "paper": {
+        "title": "Cross-Domain Contrastive Learning for Time Series Clustering",
+        "authors": [
+          "Furong Peng",
+          "Jiachen Luo",
+          "Xuan Lu",
+          "Sheng Wang",
+          "Feijiang Li"
+        ]
+      },
+      "venue": "AAAI38(8),8921-8929",
+      "year": 2024,
+      "doi": "10.1609/aaai.v38i8.28740",
+      "paper_url": "https://ojs.aaai.org/index.php/AAAI/article/view/28740",
+      "source_url": "https://github.com/JiacLuo/CDCC",
+      "repository_owner": "JiacLuo",
+      "source_commit": "013865ff4d13f08d0f5dcdf5bcfba0f5e009c8a0",
+      "source_status": "OFFICIAL",
+      "license": "NOT STATED",
+      "source_tag": null,
+      "paper_code_correspondence": "MISMATCH",
+      "environment_summary": {
+        "status": "DESIGN ONLY; not installed or verified",
+        "python": "3.8 candidate for pinned closure",
+        "framework": "torch1.10.2+cu113",
+        "cuda": "CUDA11.3 candidate",
+        "main_dependencies": [
+          "numpy1.21.6",
+          "scipy1.7.3",
+          "sklearn1.0.2",
+          "pandas1.1.5",
+          "PyYAML6.0",
+          "broad author extras keras/torch-geometric"
+        ],
+        "windows_compatibility": "older wheels need smoke",
+        "conflicts_with_loster": "author stack differs from LoSTer",
+        "note": "Isolation does not repair source mismatches."
+      },
+      "entry_points": [
+        "main.py",
+        "config/CDCC.yaml",
+        "algorithm/CDCC/model.py",
+        "algorithm/CDCC/lstm.py",
+        "algorithm/CDCC/augmentations.py"
+      ],
+      "known_k": {
+        "required": true,
+        "source": "trusted class-count metadata",
+        "target_labels_in_fit": false
+      },
+      "native_protocol": {
+        "datasets": [
+          "ACSF1",
+          "Adiac",
+          "ArrowHead",
+          "Beef",
+          "CBF",
+          "Car",
+          "CricketX",
+          "CricketY",
+          "CricketZ",
+          "DiatomSizeReduction",
+          "DistalPhalanxOutlineAgeGroup",
+          "DistalPhalanxTW",
+          "ECG200",
+          "ECGFiveDays",
+          "EOGVerticalSignal",
+          "FaceFour",
+          "FiftyWords",
+          "Fish",
+          "Fungi",
+          "GunPointMaleVersusFemale",
+          "GunPointOldVersusYoung",
+          "HouseTwenty",
+          "LargeKitchenAppliances",
+          "MiddlePhalanxOutlineAgeGroup",
+          "MiddlePhalanxTW",
+          "OSULeaf",
+          "PigAirwayPressure",
+          "PigArtPressure",
+          "PigCVP",
+          "Plane",
+          "PowerCons",
+          "ProximalPhalanxTW",
+          "SemgHandMovementCh2",
+          "ShapeletSim",
+          "ShapesAll",
+          "SwedishLeaf",
+          "SyntheticControl",
+          "ToeSegmentation1",
+          "Trace",
+          "WordSynonyms"
+        ],
+        "pooling": "TRAIN+TEST",
+        "normalization": "released merged global scalar mean/std; common per-series bypass disclosed",
+        "missing_values": "no common-record deletion",
+        "augmentation": "jitter/scaling/permutation +frequency add/remove; released choice mask faulty",
+        "core40_overlap": [
+          "ACSF1",
+          "Adiac",
+          "ArrowHead",
+          "Beef",
+          "CBF",
+          "Car",
+          "CricketX",
+          "CricketY",
+          "CricketZ",
+          "DiatomSizeReduction",
+          "DistalPhalanxOutlineAgeGroup",
+          "DistalPhalanxTW",
+          "ECG200",
+          "ECGFiveDays",
+          "EOGVerticalSignal",
+          "FaceFour",
+          "FiftyWords",
+          "Fish",
+          "Fungi",
+          "GunPointMaleVersusFemale",
+          "GunPointOldVersusYoung",
+          "HouseTwenty",
+          "LargeKitchenAppliances",
+          "MiddlePhalanxOutlineAgeGroup",
+          "MiddlePhalanxTW",
+          "OSULeaf",
+          "PigAirwayPressure",
+          "PigArtPressure",
+          "PigCVP",
+          "Plane",
+          "PowerCons",
+          "ProximalPhalanxTW",
+          "SemgHandMovementCh2",
+          "ShapeletSim",
+          "ShapesAll",
+          "SwedishLeaf",
+          "SyntheticControl",
+          "ToeSegmentation1",
+          "Trace",
+          "WordSynonyms"
+        ],
+        "core40_overlap_count": 40,
+        "extended44_absent_from_native": [
+          "CinCECGTorso",
+          "MixedShapesRegularTrain",
+          "MixedShapesSmallTrain",
+          "StarLightCurves"
+        ]
+      },
+      "parameter_inventory": {
+        "METHOD-INTRINSIC": [
+          "time/frequency encoders",
+          "FFT magnitude",
+          "instance/cluster/cross-domain contrast"
+        ],
+        "GLOBAL DEFAULT": {
+          "epochs": 300,
+          "lr_runner": 0.01,
+          "batch_runner": 256,
+          "layers_runner": 3,
+          "dropout_runner": 0.5,
+          "hidden": 1024,
+          "output": 512,
+          "feature": 256,
+          "freq_channels": 64,
+          "temperature_instance": 0.5,
+          "temperature_cluster": 1,
+          "lambda": 0.5
+        },
+        "DATASET-DEPENDENT BUT LABEL-FREE": [
+          "CNN output_channel dictionary shape rule"
+        ],
+        "LABEL-TUNED": [
+          "paper search lr/layers/batch/dropout; best parameters"
+        ],
+        "UNCLEAR": [
+          "complete search values and selection criterion"
+        ]
+      },
+      "label_use": {
+        "training": "labels excluded from losses",
+        "checkpoint_selection": "best RI tracked, saving commented; last epoch prediction",
+        "published_hyperparameters": "grid/best-parameter reporting label-informed or unclear criterion",
+        "common_rule": "known k only; fixed or unlabeled stopping; no Final36 tuning"
+      },
+      "native_metrics": {
+        "RI": "sklearn rand_score in main.py",
+        "NMI": "normalized_mutual_info_score without average_method; pinned sklearn1.0.2 default arithmetic",
+        "ARI": "not active native report",
+        "ACC": "not active native report"
+      },
+      "prediction_export": "Final labels possible after resolution; eval LSTM random states require fixed inference phase RNG",
+      "adaptation_class": "NOT A FAITHFUL REPRODUCTION",
+      "hyperparameter_policy": "NOT REPRODUCIBLE FAIRLY",
+      "readiness": "BLOCKED",
+      "blockers": [
+        "Integer view-selector indices zero rows0/1 rather than chosen rows",
+        "Univariate N,1,L permutes to1,N,L: LSTM sequence length1",
+        "Fresh random h_0/c_0 even eval",
+        "B256/drop_last zero batches on small tasks",
+        "No corrected author artifact; license unstated"
+      ],
+      "randomness": {
+        "classification": "STOCHASTIC",
+        "sources": [
+          "seed helper Python/NumPy/Torch",
+          "LSTM eval states",
+          "augmentations/shuffle",
+          "GPU kernels"
+        ],
+        "published_repetitions": "not established; native single execution seed2333 default",
+        "final_seeds": [
+          100,
+          101,
+          102,
+          103,
+          104
+        ]
+      },
+      "resource_risk": {
+        "gpu_vram": "HIGH",
+        "cpu_ram": "HIGH",
+        "runtime": "HIGH",
+        "sequence_length": "HIGH",
+        "batch_constraints": "B256>N for Beef/Fungi; batch adjustment alone insufficient",
+        "evidence": "qualitative static inference; no measured timing/memory"
+      },
+      "tier_decision": "KEEP TIER 1",
+      "smoke_validated": false,
+      "evidence": [
+        "https://ojs.aaai.org/index.php/AAAI/article/view/28740",
+        "https://github.com/JiacLuo/CDCC/tree/013865ff4d13f08d0f5dcdf5bcfba0f5e009c8a0",
+        "https://github.com/JiacLuo/CDCC/blob/013865ff4d13f08d0f5dcdf5bcfba0f5e009c8a0/main.py",
+        "https://github.com/JiacLuo/CDCC/blob/013865ff4d13f08d0f5dcdf5bcfba0f5e009c8a0/config/CDCC.yaml",
+        "https://github.com/JiacLuo/CDCC/blob/013865ff4d13f08d0f5dcdf5bcfba0f5e009c8a0/algorithm/CDCC/model.py",
+        "https://github.com/JiacLuo/CDCC/blob/013865ff4d13f08d0f5dcdf5bcfba0f5e009c8a0/algorithm/CDCC/lstm.py",
+        "https://github.com/JiacLuo/CDCC/blob/013865ff4d13f08d0f5dcdf5bcfba0f5e009c8a0/algorithm/CDCC/augmentations.py"
+      ]
+    },
+    {
+      "method_id": "fcacc",
+      "canonical_name": "FCACC",
+      "paper": {
+        "title": "Fuzzy cluster-aware contrastive clustering for time series",
+        "authors": [
+          "Congyu Wang",
+          "Mingjing Du",
+          "Xiang Jiang",
+          "Yongquan Dong"
+        ]
+      },
+      "venue": "Pattern Recognition173,112899",
+      "year": 2026,
+      "doi": "10.1016/j.patcog.2025.112899",
+      "paper_url": "https://doi.org/10.1016/j.patcog.2025.112899",
+      "source_url": "https://github.com/Du-Team/FCACC",
+      "repository_owner": "Du-Team",
+      "source_commit": "78b5e5a138ed8c83fea64e5b6668a5cded79d2dc",
+      "source_status": "OFFICIAL",
+      "license": "NOT STATED",
+      "source_tag": null,
+      "paper_code_correspondence": "PROBABLE MATCH",
+      "environment_summary": {
+        "status": "DESIGN ONLY; not installed or verified",
+        "python": "3.8/3.9 candidate; author not pinned",
+        "framework": "PyTorch unpinned;1.13.1 candidate only",
+        "cuda": "CUDA11.7 candidate",
+        "main_dependencies": [
+          "numpy",
+          "scipy",
+          "pandas",
+          "sklearn with old n_init10 frozen",
+          "matplotlib",
+          "torch"
+        ],
+        "windows_compatibility": "paths/cwd adapters; wheels to verify",
+        "conflicts_with_loster": "exact lock absent",
+        "note": "Candidate stack not author machine4090D24GB/60GB RAM."
+      },
+      "entry_points": [
+        "batch_run.py",
+        "fcacc.py:pretrain/finetune/eval_with_test_data",
+        "models/Metrics.py",
+        "models/encoder.py"
+      ],
+      "known_k": {
+        "required": true,
+        "source": "trusted class-count metadata",
+        "target_labels_in_fit": false
+      },
+      "native_protocol": {
+        "datasets": [
+          "ACSF1",
+          "AllGestureWiimoteX",
+          "AllGestureWiimoteZ",
+          "BirdChicken",
+          "Car",
+          "CricketX",
+          "CricketZ",
+          "DistalPhalanxTW",
+          "ECGFiveDays",
+          "FaceAll",
+          "FacesUCR",
+          "Fungi",
+          "GesturePebbleZ1",
+          "GesturePebbleZ2",
+          "GunPointOldVersusYoung",
+          "HouseTwenty",
+          "InsectEPGRegularTrain",
+          "InsectEPGSmallTrain",
+          "ItalyPowerDemand",
+          "LargeKitchenAppliances",
+          "Lightning2",
+          "Lightning7",
+          "Mallat",
+          "Meat",
+          "MedicalImages",
+          "MiddlePhalanxOutlineAgeGroup",
+          "PickupGestureWiimoteZ",
+          "PigAirwayPressure",
+          "PigCVP",
+          "Plane",
+          "ProximalPhalanxOutlineAgeGroup",
+          "SemgHandMovementCh2",
+          "ShapeletSim",
+          "ShapesAll",
+          "SmoothSubspace",
+          "Symbols",
+          "SyntheticControl",
+          "ToeSegmentation1",
+          "ToeSegmentation2",
+          "TwoPatterns"
+        ],
+        "pooling": "TRAIN+TEST",
+        "normalization": "selected datasets separate split global normalization; alternate TRAIN-stat loader; common per-series bypass",
+        "missing_values": "native center/trim can desynchronize IDs; not triggered on finite44",
+        "augmentation": "overlap crops, scale third view, mask/dropout",
+        "core40_overlap": [
+          "ACSF1",
+          "Car",
+          "CricketX",
+          "CricketZ",
+          "DistalPhalanxTW",
+          "ECGFiveDays",
+          "Fungi",
+          "GunPointOldVersusYoung",
+          "HouseTwenty",
+          "LargeKitchenAppliances",
+          "MiddlePhalanxOutlineAgeGroup",
+          "PigAirwayPressure",
+          "PigCVP",
+          "Plane",
+          "SemgHandMovementCh2",
+          "ShapeletSim",
+          "ShapesAll",
+          "SyntheticControl",
+          "ToeSegmentation1"
+        ],
+        "core40_overlap_count": 19,
+        "extended44_absent_from_native": [
+          "Adiac",
+          "ArrowHead",
+          "Beef",
+          "CBF",
+          "CinCECGTorso",
+          "CricketY",
+          "DiatomSizeReduction",
+          "DistalPhalanxOutlineAgeGroup",
+          "ECG200",
+          "EOGVerticalSignal",
+          "FaceFour",
+          "FiftyWords",
+          "Fish",
+          "GunPointMaleVersusFemale",
+          "MiddlePhalanxTW",
+          "MixedShapesRegularTrain",
+          "MixedShapesSmallTrain",
+          "OSULeaf",
+          "PigArtPressure",
+          "PowerCons",
+          "ProximalPhalanxTW",
+          "StarLightCurves",
+          "SwedishLeaf",
+          "Trace",
+          "WordSynonyms"
+        ]
+      },
+      "parameter_inventory": {
+        "METHOD-INTRINSIC": [
+          "fuzzy memberships/centers",
+          "cluster-aware temporal/instance contrast",
+          "dilated encoder and SWA"
+        ],
+        "GLOBAL DEFAULT": {
+          "B": 8,
+          "repr": 64,
+          "hidden": 64,
+          "depth": 10,
+          "pretrain_epochs": 100,
+          "joint_epochs": 30,
+          "pretrain_lr": 0.001,
+          "joint_lr": 0.0001,
+          "m": 1.5,
+          "w_c": 0.2,
+          "hard_w": 0.2,
+          "T1": 2,
+          "confidence": 0.95,
+          "extract_gamma": 0.5,
+          "scaling_rate": 0.8,
+          "center_seed": 0
+        },
+        "DATASET-DEPENDENT BUT LABEL-FREE": [
+          "known k"
+        ],
+        "LABEL-TUNED": [
+          "paper lr/batch/dropout search"
+        ],
+        "UNCLEAR": [
+          "full search space/criterion",
+          "universal paper joint budget; convergence figure not a universal recipe"
+        ]
+      },
+      "label_use": {
+        "training": "ground-truth labels diagnostic; fuzzy pseudo-labels model-generated",
+        "checkpoint_selection": "fixed last100+30; loss-based scheduler; no label-best branch",
+        "published_hyperparameters": "paper search disclosed; one released global recipe for common protocol",
+        "common_rule": "known k only; fixed or unlabeled stopping; no Final36 tuning"
+      },
+      "native_metrics": {
+        "ARI": "sklearn adjusted_rand_score import",
+        "NMI": "alias normalized_mutual_info_score; average_method omitted",
+        "RI": "comb/bincount pair agreement; nonnegative labels",
+        "ACC": "Hungarian square table after y-min; contiguous-label assumption"
+      },
+      "prediction_export": "Scatter shuffled-loader predictions by existing row indices; save active SWA encoder/centers",
+      "adaptation_class": "NON-SCIENTIFIC ADAPTER",
+      "hyperparameter_policy": "USE PUBLISHED DEFAULTS",
+      "readiness": "READY WITH CONDITIONS",
+      "blockers": [
+        "Exact working environment and native n_init semantics unresolved",
+        "Inference ignores indices; ordered export required",
+        "Persist SWA deployed state; avoid unused N,L,d allocation only after parity check",
+        "Fixed released100+30 policy must be explicit; license unstated"
+      ],
+      "randomness": {
+        "classification": "STOCHASTIC",
+        "sources": [
+          "seed1127 helper",
+          "crop/scale/dropout/mask/shuffle",
+          "center KMeans fixed seed0",
+          "GPU kernels"
+        ],
+        "published_repetitions": "not established; one native seed1127",
+        "final_seeds": [
+          100,
+          101,
+          102,
+          103,
+          104
+        ]
+      },
+      "resource_risk": {
+        "gpu_vram": "HIGH",
+        "cpu_ram": "HIGH",
+        "runtime": "HIGH",
+        "sequence_length": "HIGH",
+        "batch_constraints": "B8 native; source recomputes encoder per cluster when k large",
+        "evidence": "qualitative static inference; no measured timing/memory"
+      },
+      "tier_decision": "KEEP TIER 1",
+      "smoke_validated": false,
+      "evidence": [
+        "https://doi.org/10.1016/j.patcog.2025.112899",
+        "https://github.com/Du-Team/FCACC/tree/78b5e5a138ed8c83fea64e5b6668a5cded79d2dc",
+        "https://github.com/Du-Team/FCACC/blob/78b5e5a138ed8c83fea64e5b6668a5cded79d2dc/batch_run.py",
+        "https://github.com/Du-Team/FCACC/blob/78b5e5a138ed8c83fea64e5b6668a5cded79d2dc/fcacc.py",
+        "https://github.com/Du-Team/FCACC/blob/78b5e5a138ed8c83fea64e5b6668a5cded79d2dc/models/Metrics.py",
+        "https://github.com/Du-Team/FCACC/blob/78b5e5a138ed8c83fea64e5b6668a5cded79d2dc/models/encoder.py"
+      ]
+    },
+    {
+      "method_id": "tfmcc",
+      "canonical_name": "TFMCC",
+      "paper": {
+        "title": "Time-Frequency Augmented Multi-level Contrastive Clustering for Time Series",
+        "authors": [
+          "Congyu Wang",
+          "Mingjing Du",
+          "Xiang Jiang"
+        ]
+      },
+      "venue": "AAAI40(31),26142-26150",
+      "year": 2026,
+      "doi": "10.1609/aaai.v40i31.39817",
+      "paper_url": "https://ojs.aaai.org/index.php/AAAI/article/view/39817",
+      "source_url": "https://github.com/Du-Team/TFMCC",
+      "repository_owner": "Du-Team",
+      "source_commit": "882764f52b9efa1ec0950fb90369ed113e988116",
+      "source_status": "OFFICIAL",
+      "license": "NOT STATED",
+      "source_tag": null,
+      "paper_code_correspondence": "PROBABLE MATCH",
+      "environment_summary": {
+        "status": "DESIGN ONLY; not installed or verified",
+        "python": "README3.9; valid recipe unresolved",
+        "framework": "README torch2.8.1; pin unresolved",
+        "cuda": "must verify sm_61 GTX1080/driver support",
+        "main_dependencies": [
+          "ambiguous README scipy1.6.1/numpy1.26/pandas2.23",
+          "pytorch_wavelets",
+          "PyWavelets",
+          "skfuzzy import closure",
+          "numpy/scipy/pandas/sklearn",
+          "openpyxl runner"
+        ],
+        "windows_compatibility": "paths/CUDA/wavelet closure unverified",
+        "conflicts_with_loster": "do not force LoSTer framework",
+        "note": "Recover valid recipe before global resource calibration; no install yet."
+      },
+      "entry_points": [
+        "TFMCC/batch_run_single.py",
+        "TFMCC/train.py",
+        "TFMCC/tfmcc.py:fit/predict_clusters",
+        "TFMCC/models/encoder.py",
+        "TFMCC/tasks/clustering.py"
+      ],
+      "known_k": {
+        "required": true,
+        "source": "trusted class-count metadata",
+        "target_labels_in_fit": false
+      },
+      "native_protocol": {
+        "datasets": [
+          "CricketZ",
+          "ToeSegmentation2",
+          "GestureMidAirD3",
+          "FaceAll",
+          "ShapeletSim",
+          "Lightning7",
+          "FordB",
+          "ECGFiveDays",
+          "ShakeGestureWiimoteZ",
+          "Symbols",
+          "SonyAIBORobotSurface2",
+          "ProximalPhalanxTW",
+          "GunPointOldVersusYoung",
+          "MiddlePhalanxOutlineAgeGroup",
+          "Beef",
+          "SyntheticControl",
+          "WordSynonyms",
+          "ShapesAll",
+          "FacesUCR",
+          "SmoothSubspace",
+          "SwedishLeaf",
+          "TwoPatterns",
+          "MelbournePedestrian",
+          "CricketX",
+          "MoteStrain",
+          "GesturePebbleZ1",
+          "AllGestureWiimoteX",
+          "GesturePebbleZ2",
+          "OSULeaf",
+          "DodgerLoopDay",
+          "CBF",
+          "AllGestureWiimoteY",
+          "AllGestureWiimoteZ",
+          "SonyAIBORobotSurface1",
+          "Meat",
+          "CricketY",
+          "Car",
+          "FaceFour",
+          "FiftyWords",
+          "PickupGestureWiimoteZ"
+        ],
+        "pooling": "TRAIN+TEST",
+        "normalization": "selected TRAIN scalar stats applied to TEST; common per-series bypass",
+        "missing_values": "no common record trim",
+        "augmentation": "random crops +db4 level2..12 coefficient scaling",
+        "core40_overlap": [
+          "Beef",
+          "CBF",
+          "Car",
+          "CricketX",
+          "CricketY",
+          "CricketZ",
+          "ECGFiveDays",
+          "FaceFour",
+          "FiftyWords",
+          "GunPointOldVersusYoung",
+          "MiddlePhalanxOutlineAgeGroup",
+          "OSULeaf",
+          "ProximalPhalanxTW",
+          "ShapeletSim",
+          "ShapesAll",
+          "SwedishLeaf",
+          "SyntheticControl",
+          "WordSynonyms"
+        ],
+        "core40_overlap_count": 18,
+        "extended44_absent_from_native": [
+          "ACSF1",
+          "Adiac",
+          "ArrowHead",
+          "CinCECGTorso",
+          "DiatomSizeReduction",
+          "DistalPhalanxOutlineAgeGroup",
+          "DistalPhalanxTW",
+          "ECG200",
+          "EOGVerticalSignal",
+          "Fish",
+          "Fungi",
+          "GunPointMaleVersusFemale",
+          "HouseTwenty",
+          "LargeKitchenAppliances",
+          "MiddlePhalanxTW",
+          "MixedShapesRegularTrain",
+          "MixedShapesSmallTrain",
+          "PigAirwayPressure",
+          "PigArtPressure",
+          "PigCVP",
+          "Plane",
+          "PowerCons",
+          "SemgHandMovementCh2",
+          "StarLightCurves",
+          "ToeSegmentation1",
+          "Trace"
+        ]
+      },
+      "parameter_inventory": {
+        "METHOD-INTRINSIC": [
+          "temporal/instance/cluster contrast",
+          "learned cluster head argmax",
+          "wavelet augmentation",
+          "SWA"
+        ],
+        "GLOBAL DEFAULT": {
+          "epochs": 1400,
+          "B": 256,
+          "repr": 320,
+          "hidden": 64,
+          "depth": 10,
+          "lr": 0.001,
+          "optimizer_code": "AdamW",
+          "pool_length": 512,
+          "head_hidden": 256,
+          "temperature_temporal": 0.2,
+          "temperature_instance": 0.2,
+          "temperature_cluster": 0.5,
+          "wavelet_maxlevel": 12,
+          "scaling_change_rate": 0.8,
+          "max_train_length": 3000
+        },
+        "DATASET-DEPENDENT BUT LABEL-FREE": [
+          "effective B=min(B,N)",
+          "known k"
+        ],
+        "LABEL-TUNED": [],
+        "UNCLEAR": [
+          "README pins",
+          "paper Adam/code AdamW",
+          "one globally feasible smaller batch"
+        ]
+      },
+      "label_use": {
+        "training": "true labels evaluation only",
+        "checkpoint_selection": "last fixed1400 averaged encoder; no label-best branch",
+        "published_hyperparameters": "use batch-driver temperatures; no new target tuning",
+        "common_rule": "known k only; fixed or unlabeled stopping; no Final36 tuning"
+      },
+      "native_metrics": {
+        "ARI": "sklearn adjusted_rand_score",
+        "NMI": "average_method omitted; env must verify",
+        "RI": "pair agreement",
+        "ACC": "Hungarian assignment then accuracy_score; central direct matched-count rule"
+      },
+      "prediction_export": "Ordered predict_clusters argmax on final SWA network; save state/config/IDs",
+      "adaptation_class": "NON-SCIENTIFIC ADAPTER; GLOBAL CONFIGURATION CHOICE REQUIRES FREEZE",
+      "hyperparameter_policy": "DEVELOPMENT CALIBRATION REQUIRED",
+      "readiness": "READY WITH CONDITIONS",
+      "blockers": [
+        "No valid dependency lock; README ambiguous",
+        "Native B256/head320x512/1400epochs unlikely feasible across44 on8GB",
+        "Smaller batch changes negatives/BatchNorm; requires global Development8 freeze",
+        "Paper Adam/code AdamW discrepancy; license unstated"
+      ],
+      "randomness": {
+        "classification": "STOCHASTIC",
+        "sources": [
+          "initialization",
+          "Python/NumPy/Torch crops/shuffle",
+          "wavelet levels/scales",
+          "GPU kernels"
+        ],
+        "published_repetitions": "not established; native single fit",
+        "final_seeds": [
+          100,
+          101,
+          102,
+          103,
+          104
+        ]
+      },
+      "resource_risk": {
+        "gpu_vram": "VERY HIGH",
+        "cpu_ram": "HIGH",
+        "runtime": "VERY HIGH",
+        "sequence_length": "VERY HIGH",
+        "batch_constraints": "min(B,N) native; gradient accumulation not equivalent",
+        "evidence": "qualitative static inference; no measured timing/memory"
+      },
+      "tier_decision": "KEEP TIER 1",
+      "smoke_validated": false,
+      "evidence": [
+        "https://ojs.aaai.org/index.php/AAAI/article/view/39817",
+        "https://github.com/Du-Team/TFMCC/tree/882764f52b9efa1ec0950fb90369ed113e988116",
+        "https://github.com/Du-Team/TFMCC/blob/882764f52b9efa1ec0950fb90369ed113e988116/TFMCC/batch_run_single.py",
+        "https://github.com/Du-Team/TFMCC/blob/882764f52b9efa1ec0950fb90369ed113e988116/TFMCC/train.py",
+        "https://github.com/Du-Team/TFMCC/blob/882764f52b9efa1ec0950fb90369ed113e988116/TFMCC/tfmcc.py",
+        "https://github.com/Du-Team/TFMCC/blob/882764f52b9efa1ec0950fb90369ed113e988116/TFMCC/models/encoder.py",
+        "https://github.com/Du-Team/TFMCC/blob/882764f52b9efa1ec0950fb90369ed113e988116/TFMCC/tasks/clustering.py"
+      ]
+    },
+    {
+      "method_id": "ts2vec_kmeans",
+      "canonical_name": "TS2Vec + k-means",
+      "paper": {
+        "title": "TS2Vec: Towards Universal Representation of Time Series",
+        "authors": [
+          "Zhihan Yue",
+          "Yujing Wang",
+          "Juanyong Duan",
+          "Tianmeng Yang",
+          "Congrui Huang",
+          "Yunhai Tong",
+          "Bixiong Xu"
+        ]
+      },
+      "venue": "AAAI36(8),8980-8987",
+      "year": 2022,
+      "doi": "10.1609/aaai.v36i8.20881",
+      "paper_url": "https://ojs.aaai.org/index.php/AAAI/article/view/20881",
+      "source_url": "https://github.com/zhihanyue/ts2vec",
+      "repository_owner": "zhihanyue",
+      "source_commit": "b0088e14a99706c05451316dc6db8d3da9351163",
+      "source_status": "OFFICIAL",
+      "license": "MIT",
+      "source_tag": null,
+      "paper_code_correspondence": "HIGH CONFIDENCE MATCH",
+      "environment_summary": {
+        "status": "DESIGN ONLY; not installed or verified",
+        "python": "author3.8",
+        "framework": "torch1.8.1",
+        "cuda": "CUDA wheel choice to pin; CPU possible",
+        "main_dependencies": [
+          "numpy1.19.2",
+          "scipy1.6.1",
+          "pandas1.0.1",
+          "sklearn0.24.2",
+          "Bottleneck1.3.2",
+          "statsmodels0.12.2"
+        ],
+        "windows_compatibility": "old native wheels likely; smoke required",
+        "conflicts_with_loster": "older framework/numerics isolate",
+        "note": "Representation env and pinned CPU head env may be separate; serialize exact representations."
+      },
+      "entry_points": [
+        "train.py",
+        "ts2vec.py:fit/encode",
+        "tasks/classification.py:full_series"
+      ],
+      "known_k": {
+        "required": true,
+        "source": "trusted class-count metadata",
+        "target_labels_in_fit": false
+      },
+      "native_protocol": {
+        "datasets": "paper125 UCR/29 UEA classification; loader128/30",
+        "pooling": "native TRAIN SSL fit/TEST supervised classification; explicit pooled clustering adaptation",
+        "normalization": "native TRAIN-global exceptions; common per-series bypass",
+        "missing_values": "native NaN masks; reject rather than delete common samples",
+        "augmentation": "official crop/mask/dropout"
+      },
+      "parameter_inventory": {
+        "METHOD-INTRINSIC": [
+          "hierarchical instance/temporal contrast",
+          "dilated encoder/SWA",
+          "official full_series max pooling"
+        ],
+        "GLOBAL DEFAULT": {
+          "B_cli": 8,
+          "repr": 320,
+          "hidden": 64,
+          "depth": 10,
+          "lr": 0.001,
+          "max_train_length": 3000,
+          "head": {
+            "init": "k-means++",
+            "n_init": 10,
+            "algorithm": "lloyd",
+            "max_iter": 300,
+            "tol": 0.0001
+          }
+        },
+        "DATASET-DEPENDENT BUT LABEL-FREE": [
+          "default iterations200 if input.size<=100000 else600",
+          "B=min(B,N)",
+          "known k"
+        ],
+        "LABEL-TUNED": [],
+        "UNCLEAR": []
+      },
+      "label_use": {
+        "training": "fit does not receive y; supervised evaluator excluded",
+        "checkpoint_selection": "fixed iterations and last averaged network",
+        "published_hyperparameters": "do not import supervised SVM label search",
+        "common_rule": "known k only; fixed or unlabeled stopping; no Final36 tuning"
+      },
+      "native_metrics": {
+        "native": "supervised classification accuracy; not Hungarian clustering accuracy",
+        "common_clustering": "all4 central"
+      },
+      "prediction_export": "One fit/encode per dataset/root seed; full_series; one independent derived-seed KMeans head",
+      "adaptation_class": "NON-SCIENTIFIC ADAPTER; EXPLICIT CLUSTERING TASK ADAPTATION",
+      "hyperparameter_policy": "USE PUBLISHED DEFAULTS",
+      "readiness": "READY WITH CONDITIONS",
+      "blockers": [
+        "Pooled SSL/head wrapper not validated",
+        "Independent head seed/explicit n_init solver freeze required",
+        "Legacy environment not built"
+      ],
+      "randomness": {
+        "classification": "STOCHASTIC",
+        "sources": [
+          "encoder/crop/mask/shuffle",
+          "independent downstream KMeans RNG",
+          "GPU kernels"
+        ],
+        "published_repetitions": "native clustering repetitions not applicable; one pipeline per root seed",
+        "final_seeds": [
+          100,
+          101,
+          102,
+          103,
+          104
+        ]
+      },
+      "resource_risk": {
+        "gpu_vram": "HIGH",
+        "cpu_ram": "MODERATE",
+        "runtime": "HIGH",
+        "sequence_length": "HIGH",
+        "batch_constraints": "B8 native; temporal similarity quadratic in crop length",
+        "evidence": "qualitative static inference; no measured timing/memory"
+      },
+      "tier_decision": "KEEP TIER 1",
+      "smoke_validated": false,
+      "evidence": [
+        "https://ojs.aaai.org/index.php/AAAI/article/view/20881",
+        "https://github.com/zhihanyue/ts2vec/tree/b0088e14a99706c05451316dc6db8d3da9351163",
+        "https://github.com/zhihanyue/ts2vec/blob/b0088e14a99706c05451316dc6db8d3da9351163/train.py",
+        "https://github.com/zhihanyue/ts2vec/blob/b0088e14a99706c05451316dc6db8d3da9351163/ts2vec.py",
+        "https://github.com/zhihanyue/ts2vec/blob/b0088e14a99706c05451316dc6db8d3da9351163/tasks/classification.py"
+      ]
+    },
+    {
+      "method_id": "r_clustering",
+      "canonical_name": "R-Clustering",
+      "paper": {
+        "title": "Time series clustering with random convolutional kernels",
+        "authors": [
+          "Jorge Marco-Blanco",
+          "Rubén Cuevas"
+        ]
+      },
+      "venue": "Data Mining and Knowledge Discovery38(4),1862-1888",
+      "year": 2024,
+      "doi": "10.1007/s10618-024-01018-x",
+      "paper_url": "https://link.springer.com/article/10.1007/s10618-024-01018-x",
+      "source_url": "https://github.com/jorgemarcoes/R-Clustering",
+      "repository_owner": "jorgemarcoes",
+      "source_commit": "3ed571eebe9eb8d399a0c995a6917f62d838f0fc",
+      "source_status": "OFFICIAL",
+      "license": "GPL-3.0",
+      "source_tag": "submission",
+      "paper_code_correspondence": "PROBABLE MATCH",
+      "environment_summary": {
+        "status": "DESIGN ONLY; not installed or verified",
+        "python": "paper3.6 conflicts with modern aeon; candidate3.10",
+        "framework": "NumPy/Numba/sklearn CPU",
+        "cuda": "none",
+        "main_dependencies": [
+          "numpy1.26/scipy1.13 candidate",
+          "sklearn1.4.1.post1",
+          "numba0.60 candidate",
+          "pandas",
+          "aeon loader optional"
+        ],
+        "windows_compatibility": "paper explicitly Windows; module extraction needed",
+        "conflicts_with_loster": "numeric/Numba pins unknown",
+        "note": "Do not execute pip/download/full-UCR notebook cells; preserve algorithm definitions."
+      },
+      "entry_points": [
+        "R_Clustering_on_UCR_Archive.ipynb:cells2,4,10 definitions;cell12 pipeline"
+      ],
+      "known_k": {
+        "required": true,
+        "source": "trusted class-count metadata",
+        "target_labels_in_fit": false
+      },
+      "native_protocol": {
+        "datasets": "117 UCR after11 variable-length exclusions;41 development tasks",
+        "pooling": "full aeon dataset TRAIN+TEST",
+        "normalization": "StandardScaler on extracted features; native series-loader setting not fully pinned",
+        "missing_values": "native Dodger/Melbourne exceptions not inherited",
+        "augmentation": "none",
+        "excluded_varying_length_datasets": [
+          "PLAID",
+          "AllGestureWiimoteX",
+          "AllGestureWiimoteY",
+          "AllGestureWiimoteZ",
+          "GestureMidAirD1",
+          "GestureMidAirD2",
+          "GestureMidAirD3",
+          "GesturePebbleZ1",
+          "GesturePebbleZ2",
+          "PickupGestureWiimoteZ",
+          "ShakeGestureWiimoteZ"
+        ],
+        "extended44_excluded_by_native_list": []
+      },
+      "parameter_inventory": {
+        "METHOD-INTRINSIC": [
+          "modified MiniRocket",
+          "feature scaler/PCA/Euclidean KMeans"
+        ],
+        "GLOBAL DEFAULT": {
+          "requested_features": 500,
+          "actual_features": 420,
+          "kernel_length": 9,
+          "max_dilations": 32,
+          "PCA_rule": "argmax(explained_variance_ratio_ <0.01)",
+          "kmeans_n_init": 10
+        },
+        "DATASET-DEPENDENT BUT LABEL-FREE": [
+          "dilation from L",
+          "PCA dimensions from unlabeled features",
+          "known k"
+        ],
+        "LABEL-TUNED": [
+          "paper41-task search20 configs; features100..20000/length7..13"
+        ],
+        "UNCLEAR": [
+          "original numeric pins"
+        ]
+      },
+      "label_use": {
+        "training": "k and ARI only; no y in features/PCA/KMeans",
+        "checkpoint_selection": "PCA variance rule /KMeans inertia",
+        "published_hyperparameters": "historical41-task label-informed global500/length9; no2026 retuning",
+        "common_rule": "known k only; fixed or unlabeled stopping; no Final36 tuning"
+      },
+      "native_metrics": {
+        "ARI": "sklearn adjusted_rand_score",
+        "NMI_RI_ACC": "not native notebook outputs"
+      },
+      "prediction_export": "Ordered fit_predict plus kernels/biases/scaler/PCA/centers; compiled Numba seed bridge required",
+      "adaptation_class": "NON-SCIENTIFIC ADAPTER",
+      "hyperparameter_policy": "USE PUBLISHED DEFAULTS",
+      "readiness": "READY WITH CONDITIONS",
+      "blockers": [
+        "Numba RNG distinct from host NumPy seed",
+        "requested500 actually420; disclose rather than silently change",
+        "PCA selector can return0; no silent clamp",
+        "Notebook-only source/env not smoke verified"
+      ],
+      "randomness": {
+        "classification": "STOCHASTIC",
+        "sources": [
+          "NumPy permutation",
+          "Numba random calibration series",
+          "possible randomized PCA",
+          "KMeans"
+        ],
+        "published_repetitions": 10,
+        "final_seeds": [
+          100,
+          101,
+          102,
+          103,
+          104
+        ]
+      },
+      "resource_risk": {
+        "gpu_vram": "LOW",
+        "cpu_ram": "MODERATE",
+        "runtime": "MODERATE",
+        "sequence_length": "MODERATE",
+        "batch_constraints": "CPU N x420 features/PCA",
+        "evidence": "qualitative static inference; no measured timing/memory"
+      },
+      "tier_decision": "KEEP TIER 1",
+      "smoke_validated": false,
+      "evidence": [
+        "https://link.springer.com/article/10.1007/s10618-024-01018-x",
+        "https://github.com/jorgemarcoes/R-Clustering/tree/3ed571eebe9eb8d399a0c995a6917f62d838f0fc",
+        "https://github.com/jorgemarcoes/R-Clustering/blob/3ed571eebe9eb8d399a0c995a6917f62d838f0fc/R_Clustering_on_UCR_Archive.ipynb"
+      ]
+    },
+    {
+      "method_id": "kasba",
+      "canonical_name": "KASBA",
+      "paper": {
+        "title": "Rock the KASBA: blazingly fast and accurate time series clustering",
+        "authors": [
+          "Christopher Holder",
+          "Anthony Bagnall"
+        ]
+      },
+      "venue": "Data Mining and Knowledge Discovery40,article21",
+      "year": 2026,
+      "doi": "10.1007/s10618-026-01189-9",
+      "paper_url": "https://link.springer.com/article/10.1007/s10618-026-01189-9",
+      "source_url": "https://github.com/aeon-toolkit/aeon",
+      "repository_owner": "aeon-toolkit",
+      "source_commit": "0fed29f21908cfad2981ea645f51aaf018f0fe89",
+      "source_status": "OFFICIAL",
+      "license": "BSD-3-Clause",
+      "source_tag": "v1.1.0",
+      "paper_code_correspondence": "HIGH CONFIDENCE MATCH",
+      "environment_summary": {
+        "status": "DESIGN ONLY; not installed or verified",
+        "python": "aeon>=3.9,<3.14; candidate3.10",
+        "framework": "aeon1.1.0/Numba CPU",
+        "cuda": "none",
+        "main_dependencies": [
+          "numpy>=1.21,<2.3",
+          "scipy>=1.9,<1.16",
+          "pandas>=2,<2.3",
+          "sklearn>=1,<1.7",
+          "numba>=0.55,<0.62"
+        ],
+        "windows_compatibility": "native wheels candidate",
+        "conflicts_with_loster": "LoSTer pandas1.5.3 incompatible",
+        "note": "Publication explicitly links release1.1.0. Compatible candidate numeric versions need freeze/smoke."
+      },
+      "entry_points": [
+        "aeon/clustering/_kasba.py",
+        "aeon/clustering/averaging/_kasba_average.py",
+        "aeon/distances/elastic/_msm.py"
+      ],
+      "known_k": {
+        "required": true,
+        "source": "trusted class-count metadata",
+        "target_labels_in_fit": false
+      },
+      "native_protocol": {
+        "datasets": "112 finite fixed-length UCR tasks;16 excluded",
+        "pooling": "main TRAIN fit/TEST predict; also pooled comparison",
+        "normalization": "z-normalize before estimator",
+        "missing_values": "excluded rather than imputed",
+        "augmentation": "none"
+      },
+      "parameter_inventory": {
+        "METHOD-INTRINSIC": [
+          "MSM metric",
+          "elastic kmeans++",
+          "stochastic barycenters",
+          "triangle pruning"
+        ],
+        "GLOBAL DEFAULT": {
+          "distance": "msm",
+          "MSM_c": 1,
+          "max_iter": 300,
+          "tol": 1e-06,
+          "ba_subset_size": 0.5,
+          "initial_step_size": 0.05,
+          "decay_rate": 0.1
+        },
+        "DATASET-DEPENDENT BUT LABEL-FREE": [
+          "known k",
+          "subset size min10; initial full cluster"
+        ],
+        "LABEL-TUNED": [],
+        "UNCLEAR": [
+          "main paper repetition count; pooled kShape comparison10"
+        ]
+      },
+      "label_use": {
+        "training": "estimator y ignored",
+        "checkpoint_selection": "label-free convergence/max300",
+        "published_hyperparameters": "global defaults",
+        "common_rule": "known k only; fixed or unlabeled stopping; no Final36 tuning"
+      },
+      "native_metrics": {
+        "paper": "ARI, RI, Hungarian CLACC and mutual-information measure; precise evaluated NMI normalizer not recovered from estimator",
+        "estimator": "no metrics; central evaluation"
+      },
+      "prediction_export": "labels_/full-pool predict; save centers/random_state; input N,1,L",
+      "adaptation_class": "NON-SCIENTIFIC ADAPTER",
+      "hyperparameter_policy": "USE PUBLISHED DEFAULTS",
+      "readiness": "READY FOR IMPLEMENTATION",
+      "blockers": [
+        "Future environment/import/Development8/export/timing smoke"
+      ],
+      "randomness": {
+        "classification": "STOCHASTIC",
+        "sources": [
+          "random_state elastic kmeans++",
+          "barycenter subset/permutation"
+        ],
+        "published_repetitions": "pooled kShape comparison10; main experiment count not established",
+        "final_seeds": [
+          100,
+          101,
+          102,
+          103,
+          104
+        ]
+      },
+      "resource_risk": {
+        "gpu_vram": "LOW",
+        "cpu_ram": "HIGH",
+        "runtime": "HIGH",
+        "sequence_length": "HIGH",
+        "batch_constraints": "CPU MSM/barycenter dynamic programs with L squared cost",
+        "evidence": "qualitative static inference; no measured timing/memory"
+      },
+      "tier_decision": "KEEP TIER 1",
+      "smoke_validated": false,
+      "evidence": [
+        "https://link.springer.com/article/10.1007/s10618-026-01189-9",
+        "https://github.com/aeon-toolkit/aeon/tree/0fed29f21908cfad2981ea645f51aaf018f0fe89",
+        "https://github.com/aeon-toolkit/aeon/blob/0fed29f21908cfad2981ea645f51aaf018f0fe89/aeon/clustering/_kasba.py",
+        "https://github.com/aeon-toolkit/aeon/blob/0fed29f21908cfad2981ea645f51aaf018f0fe89/aeon/clustering/averaging/_kasba_average.py",
+        "https://github.com/aeon-toolkit/aeon/blob/0fed29f21908cfad2981ea645f51aaf018f0fe89/aeon/distances/elastic/_msm.py"
+      ]
+    },
+    {
+      "method_id": "fasa",
+      "canonical_name": "FASA",
+      "paper": {
+        "title": "MUFASA: Fast and Accurate Multivariate Time-Series Clustering",
+        "authors": [
+          "Haojun Li",
+          "John Paparrizos"
+        ]
+      },
+      "venue": "Proceedings of ACM on Management of Data4(3),SIGMOD,article213",
+      "year": 2026,
+      "doi": "10.1145/3802090",
+      "paper_url": "https://paparrizos.org/papers/LiSIGMOD26.pdf",
+      "source_url": "https://github.com/TheDatumOrg/MUFASA",
+      "repository_owner": "TheDatumOrg",
+      "source_commit": "9c05d415efee81fca1a87c1e91623db613ea2ecc",
+      "source_status": "OFFICIAL",
+      "license": "NOT STATED",
+      "source_tag": null,
+      "paper_code_correspondence": "HIGH CONFIDENCE MATCH",
+      "environment_summary": {
+        "status": "DESIGN ONLY; not installed or verified",
+        "python": "not pinned; candidate3.10",
+        "framework": "NumPy/SciPy CPU",
+        "cuda": "none",
+        "main_dependencies": [
+          "numpy",
+          "scipy",
+          "h5py for native format",
+          "tqdm"
+        ],
+        "windows_compatibility": "pure CPU code plausible Windows",
+        "conflicts_with_loster": "broad requirements_UTS extras not required by core",
+        "note": "Verify narrow method-only closure; do not install other baseline TF/aeon/tslearn stacks."
+      },
+      "entry_points": [
+        "Clustering/Running_baseline_iter_univariate.py -a FASA",
+        "Clustering/FASA_I_I/FASA_I_I.py"
+      ],
+      "known_k": {
+        "required": true,
+        "source": "trusted class-count metadata",
+        "target_labels_in_fit": false
+      },
+      "native_protocol": {
+        "datasets": "128 UCR univariate;30 UEA belongs to MUFASA companion",
+        "pooling": "TRAIN+TEST processed HDF5",
+        "normalization": "published z-normalization; variable-length resampling/missing interpolation irrelevant to finite fixed44",
+        "missing_values": "no interpolation/deletion without explicit protocol decision",
+        "augmentation": "none"
+      },
+      "parameter_inventory": {
+        "METHOD-INTRINSIC": [
+          "FFT SBD alignment",
+          "aligned-mean fast centroid; no eigenvector step"
+        ],
+        "GLOBAL DEFAULT": {
+          "max_iter": 100,
+          "centroid_init": "zero"
+        },
+        "DATASET-DEPENDENT BUT LABEL-FREE": [
+          "known k"
+        ],
+        "LABEL-TUNED": [],
+        "UNCLEAR": [
+          "exact numeric versions"
+        ]
+      },
+      "label_use": {
+        "training": "labels k and metrics only",
+        "checkpoint_selection": "assignment stability/max100",
+        "published_hyperparameters": "fixed partitional defaults",
+        "common_rule": "known k only; fixed or unlabeled stopping; no Final36 tuning"
+      },
+      "native_metrics": {
+        "ARI": "sklearn adjusted_rand_score",
+        "RI": "sklearn rand_score",
+        "NMI": "normalized_mutual_info_score without explicit normalizer",
+        "ACC": "not native runner"
+      },
+      "prediction_export": "Scatter cluster-member row indices to canonical IDs, ensure each sample once; itr filename is not seed",
+      "adaptation_class": "NON-SCIENTIFIC ADAPTER",
+      "hyperparameter_policy": "USE PUBLISHED DEFAULTS",
+      "readiness": "READY WITH CONDITIONS",
+      "blockers": [
+        "Root license unstated; do not infer article or embedded component license",
+        "NumPy seed injection needed; itr does not seed",
+        "Environment/ordered export smoke pending"
+      ],
+      "randomness": {
+        "classification": "STOCHASTIC",
+        "sources": [
+          "random initial partition",
+          "empty cluster recovery"
+        ],
+        "published_repetitions": 10,
+        "final_seeds": [
+          100,
+          101,
+          102,
+          103,
+          104
+        ]
+      },
+      "resource_risk": {
+        "gpu_vram": "LOW",
+        "cpu_ram": "MODERATE",
+        "runtime": "MODERATE",
+        "sequence_length": "MODERATE",
+        "batch_constraints": "CPU FFT N xk assignments; no eigensystem",
+        "evidence": "qualitative static inference; no measured timing/memory"
+      },
+      "tier_decision": "KEEP TIER 1",
+      "smoke_validated": false,
+      "evidence": [
+        "https://paparrizos.org/papers/LiSIGMOD26.pdf",
+        "https://github.com/TheDatumOrg/MUFASA/tree/9c05d415efee81fca1a87c1e91623db613ea2ecc",
+        "https://github.com/TheDatumOrg/MUFASA/blob/9c05d415efee81fca1a87c1e91623db613ea2ecc/Clustering/Running_baseline_iter_univariate.py",
+        "https://github.com/TheDatumOrg/MUFASA/blob/9c05d415efee81fca1a87c1e91623db613ea2ecc/Clustering/FASA_I_I/FASA_I_I.py"
+      ]
+    }
+  ]
+}
