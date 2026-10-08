@@ -1,0 +1,55 @@
+{
+  "schema": "baselines2026.wave1-config.v1",
+  "scope": "SyntheticControl smoke only; not CORE-44",
+  "dataset": "SyntheticControl",
+  "seed": 0,
+  "expected": {
+    "N": 600,
+    "L": 60,
+    "k": 6,
+    "TRAIN": 300,
+    "TEST": 300,
+    "input_hashes": {
+      "TRAIN": "58af636cbd5592bdda45ba638629e40f17c08354aa545a61fd41b92582bdd176",
+      "TEST": "cd44464b200820913f928a952af78d512ee3924f6243053d28a6d45c0aacdb76"
+    }
+  },
+  "preprocessing": "per-series-z-ddof0; float64; preserve native centroid/distance transforms",
+  "cpu_threads": 1,
+  "methods": {
+    "euclidean_kmeans": {
+      "parameters": {
+        "init": "k-means++",
+        "n_init": 10,
+        "max_iter": 300,
+        "tol": 0.0001,
+        "algorithm": "lloyd",
+        "copy_x": true
+      },
+      "intrinsic": "squared Euclidean/Lloyd; no augmentation"
+    },
+    "kshape": {
+      "parameters": {
+        "centroid_init": "zero",
+        "max_iter": 100,
+        "n_jobs": 1
+      },
+      "intrinsic": "native FFT SBD/eigenvector centroid/assignment convergence; no augmentation"
+    },
+    "kasba": {
+      "parameters": {
+        "distance": "msm",
+        "distance_params": {
+          "c": 1
+        },
+        "ba_subset_size": 0.5,
+        "initial_step_size": 0.05,
+        "max_iter": 300,
+        "tol": 0.000001,
+        "decay_rate": 0.1,
+        "verbose": false
+      },
+      "intrinsic": "native MSM/elastic initialization/stochastic BA/triangle pruning; no augmentation"
+    }
+  }
+}
