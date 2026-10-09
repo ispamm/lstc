@@ -8,9 +8,9 @@
   "CORE44_authorized": false,
   "counts": {
     "READY FOR DEVELOPMENT BENCHMARK": 3,
-    "READY WITH WARNINGS": 2,
-    "CONDITIONAL_NOT_IMPLEMENTED": 3,
-    "BLOCKED": 3
+    "READY WITH WARNINGS": 3,
+    "CONDITIONAL_NOT_IMPLEMENTED": 1,
+    "BLOCKED": 4
   },
   "methods": [
     {
@@ -88,14 +88,80 @@
       "canonical_name": "FCACC",
       "historical_audit08_readiness": "READY WITH CONDITIONS",
       "source_commit": "78b5e5a138ed8c83fea64e5b6668a5cded79d2dc",
-      "implementation_status": "CONDITIONAL_NOT_IMPLEMENTED",
-      "evidence_report": "analysis/audits/08-baseline-protocol-gate.md",
+      "implementation_status": "BLOCKED",
+      "evidence_report": "analysis/audits/11-baseline-wave2a-readiness.md",
       "conditions": [
         "Exact working environment and native n_init semantics unresolved",
         "Inference ignores indices; ordered export required",
         "Persist SWA deployed state; avoid unused N,L,d allocation only after parity check",
         "Fixed released100+30 policy must be explicit; license unstated"
-      ]
+      ],
+      "previous_implementation_status": "CONDITIONAL_NOT_IMPLEMENTED",
+      "previous_evidence_report": "analysis/audits/08-baseline-protocol-gate.md",
+      "adapter_commit": null,
+      "adapter_parent_commit": "4b66880a3face2d26e07dbb89e16e9f950567ce3",
+      "adapter_tree_sha256": "7a2d78f05166dc718292c65bf1204fe1d7a1db04430c06bb00566831d798757f",
+      "environment_sha256": "e85651315ac15fa4ea1981bac9afadc372f5fce929d3ef681100a2598233534b",
+      "environment_lock": "experiments_new/baselines2026/configs/requirements-wave2a-fcacc.lock.txt",
+      "environment_lock_sha256": "3e9d70904773f833229ba43ca1ff4eaabb4c8db09142e5cf0a098cd71c0626f6",
+      "wave2a_source_status": {
+        "frozen_tree_verified": true,
+        "scientific_correspondence": "BLOCKED: explicit clustering-distance loss has no encoder gradient",
+        "source_unmodified": true
+      },
+      "wave2a_environment_status": {
+        "status": "VERIFIED",
+        "python": "3.9.13",
+        "torch": "1.10.0+cu113",
+        "CUDA_tensor_operation": "PASS GTX1080 sm61",
+        "complete_lock": true
+      },
+      "wave2a_test_status": {
+        "gate_directory": "G:\\Articoli\\Articoli da Completare\\LoSTer 2026\\baselines\\wave2a\\validation-fcacc-002",
+        "passed": false,
+        "counts": {
+          "errors": 0,
+          "failures": 1,
+          "skipped": 0,
+          "tests": 56
+        },
+        "seed0_replay_exact": true,
+        "seed1_changes_state": true,
+        "active_checkpoint_replay_exact_synthetic": true
+      },
+      "wave2a_integration_status": {
+        "status": "WITHHELD_BY_SCIENTIFIC_GATE",
+        "dataset": "SyntheticControl",
+        "seed": 0,
+        "actual_real_fits": 0,
+        "prediction_count": null,
+        "fresh_process_reload": null,
+        "no_fit_resume": null
+      },
+      "wave2a_resource_status": {
+        "GTX1080_synthetic_passed": true,
+        "full44_feasibility": "UNESTABLISHED",
+        "full_fit_measured": false,
+        "OOM_observed": false
+      },
+      "remaining_conditions": [
+        "Author source/paper clarification required for disconnected explicit cluster-loss gradient and pretraining eval-mode transition; no scientific repair authorized",
+        "License NOT STATED; no vendoring or redistribution assertion",
+        "Full SyntheticControl and broader integration withheld"
+      ],
+      "wave2a_scientific_blocker": {
+        "classification": "SOURCE/MANUSCRIPT CORRESPONDENCE BLOCKER; no scientific repair authorized",
+        "native_cluster_term_requires_grad": false,
+        "native_graph_reaches_raw_encoder": false,
+        "paper_equations": [
+          8,
+          11
+        ],
+        "pooled_representation_requires_grad": false,
+        "raw_encoder_parameter_count": 276032,
+        "real_dataset_fit_permitted": false
+      },
+      "conditions_interpretation": "Original conditions retained as historical Audit08/Wave1B findings; wave2a_* and remaining_conditions describe current evidence and unresolved gates"
     },
     {
       "method_id": "tfmcc",
@@ -116,13 +182,77 @@
       "canonical_name": "TS2Vec + k-means",
       "historical_audit08_readiness": "READY WITH CONDITIONS",
       "source_commit": "b0088e14a99706c05451316dc6db8d3da9351163",
-      "implementation_status": "CONDITIONAL_NOT_IMPLEMENTED",
-      "evidence_report": "analysis/audits/08-baseline-protocol-gate.md",
+      "implementation_status": "READY WITH WARNINGS",
+      "evidence_report": "analysis/audits/11-baseline-wave2a-readiness.md",
       "conditions": [
         "Pooled SSL/head wrapper not validated",
         "Independent head seed/explicit n_init solver freeze required",
         "Legacy environment not built"
-      ]
+      ],
+      "previous_implementation_status": "CONDITIONAL_NOT_IMPLEMENTED",
+      "previous_evidence_report": "analysis/audits/08-baseline-protocol-gate.md",
+      "adapter_commit": null,
+      "adapter_parent_commit": "4b66880a3face2d26e07dbb89e16e9f950567ce3",
+      "adapter_tree_sha256": "7a2d78f05166dc718292c65bf1204fe1d7a1db04430c06bb00566831d798757f",
+      "environment_sha256": "8eca15e6debe4a870994892db271a766430a1c1c9c622e49afb7ee6d9a802913",
+      "environment_lock": "experiments_new/baselines2026/configs/requirements-wave2a-ts2vec.lock.txt",
+      "environment_lock_sha256": "74c0b01411f906497b6785f771e083e3e20512fab8eb5f48a36be9e5ef7a3641",
+      "wave2a_source_status": {
+        "frozen_tree_verified": true,
+        "scientific_correspondence": "native encoder verified; explicit clustering adaptation",
+        "source_unmodified": true
+      },
+      "wave2a_environment_status": {
+        "status": "VERIFIED",
+        "python": "3.7.9",
+        "torch": "1.8.1+cu111",
+        "CUDA_tensor_operation": "PASS GTX1080 sm61",
+        "complete_lock": true
+      },
+      "wave2a_test_status": {
+        "gate_directory": "G:\\Articoli\\Articoli da Completare\\LoSTer 2026\\baselines\\wave2a\\validation-ts-005",
+        "passed": true,
+        "counts": {
+          "errors": 0,
+          "failures": 0,
+          "skipped": 0,
+          "tests": 56
+        },
+        "seed0_replay_exact": true,
+        "seed1_changes_state": true,
+        "active_checkpoint_replay_exact_synthetic": true
+      },
+      "wave2a_integration_status": {
+        "status": "SUCCESS",
+        "dataset": "ECG200",
+        "seed": 0,
+        "actual_real_fits": 1,
+        "prediction_count": 200,
+        "fresh_process_reload": true,
+        "no_fit_resume": true
+      },
+      "wave2a_resource_status": {
+        "GTX1080_synthetic_passed": true,
+        "full44_feasibility": "UNESTABLISHED",
+        "full_fit_measured": true,
+        "OOM_observed": false,
+        "pipeline_wall_seconds": 497.8291443,
+        "peak_GPU_allocated_bytes": 60545024,
+        "peak_GPU_reserved_bytes": 67108864,
+        "peak_CPU_RSS_bytes": 2150084608
+      },
+      "remaining_conditions": [
+        "Legacy compatible environment/API-name mapping disclosed; long-sequence/full-panel feasibility unmeasured"
+      ],
+      "run_id": "ec532757cbe6d28620a5fe9948e2b43ab95ce317286c011cf52e3d7b02f32a85",
+      "external_artifact_directory": "G:\\Articoli\\Articoli da Completare\\LoSTer 2026\\baselines\\wave2a\\development-smoke-001\\runs\\ts2vec_kmeans\\ec532757cbe6d28620a5fe9948e2b43ab95ce317286c011cf52e3d7b02f32a85",
+      "smoke_metrics_integration_only": {
+        "ACC": 0.76,
+        "ARI": 0.25865000491866164,
+        "NMI_arithmetic": 0.16495309144818152,
+        "RI": 0.6333668341708543
+      },
+      "conditions_interpretation": "Original conditions retained as historical Audit08/Wave1B findings; wave2a_* and remaining_conditions describe current evidence and unresolved gates"
     },
     {
       "method_id": "r_clustering",

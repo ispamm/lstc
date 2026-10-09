@@ -1,0 +1,74 @@
+{
+  "ts2vec_kmeans": {
+    "dataset": "ECG200",
+    "seed": 0,
+    "expected": {
+      "N": 200,
+      "L": 96,
+      "k": 2,
+      "TRAIN": 100,
+      "TEST": 100,
+      "input_hashes": {
+        "TRAIN": "bd08b37147ebf205231ad43e02c42dd5c14bc348f4ccc7614f85634c8916bf21",
+        "TEST": "c8ac02caf98be23c47c044fde026219301ceaf0b2f97bc107bd0cd96330b867c"
+      }
+    },
+    "recipe": {
+      "batch_size": 8,
+      "output_dims": 320,
+      "hidden_dims": 64,
+      "depth": 10,
+      "lr": 0.001,
+      "max_train_length": 3000,
+      "temporal_unit": 0,
+      "budget": "native200 if input.size<=100000 else600",
+      "extraction": "full_series",
+      "head": {
+        "init": "k-means++",
+        "n_init": 10,
+        "algorithm": "lloyd; sklearn0.24 API full",
+        "max_iter": 300,
+        "tol": 0.0001,
+        "phase": "kmeans"
+      }
+    }
+  },
+  "fcacc": {
+    "dataset": "SyntheticControl",
+    "seed": 0,
+    "expected": {
+      "N": 600,
+      "L": 60,
+      "k": 6,
+      "TRAIN": 300,
+      "TEST": 300,
+      "input_hashes": {
+        "TRAIN": "58af636cbd5592bdda45ba638629e40f17c08354aa545a61fd41b92582bdd176",
+        "TEST": "cd44464b200820913f928a952af78d512ee3924f6243053d28a6d45c0aacdb76"
+      }
+    },
+    "recipe": {
+      "batch_size": 8,
+      "output_dims": 64,
+      "hidden_dims": 64,
+      "depth": 10,
+      "pretraining_epoch": 100,
+      "MaxIter": 30,
+      "lr": 0.001,
+      "joint_lr": 0.0001,
+      "m": 1.5,
+      "T1": 2,
+      "w_c": 0.2,
+      "hard_w": 0.2,
+      "alpha": 0.95,
+      "gamma": 0.5,
+      "scaling_rate": 0.8,
+      "augmentation": "native DataTransform calls jitter, not scaling",
+      "center_seed": 0,
+      "center_n_init": "sklearn1.3.2 warn default10",
+      "max_train_length": 4000,
+      "temporal_unit": 0,
+      "assignment": "argmax native fuzzy memberships"
+    }
+  }
+}
