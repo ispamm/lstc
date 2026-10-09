@@ -1,0 +1,40 @@
+{
+  "schema": "baselines2026.wave1b-config.v1",
+  "methods": [
+    "r_clustering",
+    "fasa"
+  ],
+  "dataset": "ECG200",
+  "seed": 0,
+  "cpu_threads": 1,
+  "preprocessing": "common per-series population z float64; R native float32/features/scaler/PCA; FASA native centroid ddof1",
+  "expected": {
+    "N": 200,
+    "L": 96,
+    "k": 2,
+    "TRAIN": 100,
+    "TEST": 100,
+    "input_hashes": {
+      "TRAIN": "bd08b37147ebf205231ad43e02c42dd5c14bc348f4ccc7614f85634c8916bf21",
+      "TEST": "c8ac02caf98be23c47c044fde026219301ceaf0b2f97bc107bd0cd96330b867c"
+    }
+  },
+  "recipes": {
+    "r_clustering": {
+      "requested_features": 500,
+      "effective_features": 420,
+      "kernel_length": 9,
+      "max_dilations": 32,
+      "PCA": "native argmax(variance < .01); native auto solver; no clamp",
+      "KMeans": "native n_init10; all other sklearn1.4.1.post1 defaults; global seeded NumPy",
+      "Numba_seed": "root seed"
+    },
+    "fasa": {
+      "variant": "univariate FASA_I_I",
+      "max_iter": 100,
+      "centroid_init": "zero",
+      "RNG": "scoped NumPy root seed; itr not seed",
+      "zero_norm": "native unchanged"
+    }
+  }
+}

@@ -1,0 +1,186 @@
+{
+  "schema": "baselines2026.implementation-status.v1",
+  "as_of_local_date": "2026-10-09",
+  "historical_audit08_registry": "analysis/baselines/baseline-registry-2026.json",
+  "historical_registry_sha256": "7da416c39f3c2008f86d862033ef812553bcd62f679e6740fb85637860983a8d",
+  "historical_findings_unchanged": true,
+  "scope": "local source/seed/contract validation and one-task development integration; not CORE44 readiness",
+  "CORE44_authorized": false,
+  "counts": {
+    "READY FOR DEVELOPMENT BENCHMARK": 3,
+    "READY WITH WARNINGS": 2,
+    "CONDITIONAL_NOT_IMPLEMENTED": 3,
+    "BLOCKED": 3
+  },
+  "methods": [
+    {
+      "method_id": "euclidean_kmeans",
+      "canonical_name": "Euclidean k-means",
+      "historical_audit08_readiness": "READY FOR IMPLEMENTATION",
+      "source_commit": "719c0c6036ac99d45ffb45ed7c8b4e4b221384b5",
+      "implementation_status": "READY FOR DEVELOPMENT BENCHMARK",
+      "evidence_report": "analysis/audits/09-baseline-wave1-readiness.md",
+      "preserved_adapter_commit": "5ff48377deac2b5934b450951eb41b1e3b08e7c9",
+      "smoke_dataset": "SyntheticControl",
+      "smoke_seed": 0,
+      "smoke_status": "SUCCESS",
+      "run_id": "292de83e89601192664d6a959e23363a547dd428b4cd1a56f0e13a206b7ace72",
+      "source_bundle_sha256": "30b60e97568814e97254d34a77b71948cb99277de44fb90752e309b54a4e7a7d"
+    },
+    {
+      "method_id": "kshape",
+      "canonical_name": "k-Shape",
+      "historical_audit08_readiness": "READY FOR IMPLEMENTATION",
+      "source_commit": "778e735624d15848556e4d23fe38c321d453937a",
+      "implementation_status": "READY FOR DEVELOPMENT BENCHMARK",
+      "evidence_report": "analysis/audits/09-baseline-wave1-readiness.md",
+      "preserved_adapter_commit": "5ff48377deac2b5934b450951eb41b1e3b08e7c9",
+      "smoke_dataset": "SyntheticControl",
+      "smoke_seed": 0,
+      "smoke_status": "SUCCESS",
+      "run_id": "f161a1a124ce80e88f12b3de24ebe10faa72c463046dfb03beffedea5b161f45",
+      "source_bundle_sha256": "30b60e97568814e97254d34a77b71948cb99277de44fb90752e309b54a4e7a7d"
+    },
+    {
+      "method_id": "ckm",
+      "canonical_name": "CKM",
+      "historical_audit08_readiness": "BLOCKED",
+      "source_commit": null,
+      "implementation_status": "BLOCKED",
+      "evidence_report": "analysis/audits/08-baseline-protocol-gate.md",
+      "conditions": [
+        "No official or author source identified by bounded primary/author-title repository search",
+        "Incomplete annealing/optimizer/init reproduction recipe",
+        "Local LoSTer CKM cannot be silently substituted"
+      ]
+    },
+    {
+      "method_id": "dtcc_2023",
+      "canonical_name": "DTCC-2023",
+      "historical_audit08_readiness": "BLOCKED",
+      "source_commit": "8531376c0d4efcbcf7a16fda881b219b3d306397",
+      "implementation_status": "BLOCKED",
+      "evidence_report": "analysis/audits/08-baseline-protocol-gate.md",
+      "conditions": [
+        "TF2.4 declaration incompatible with TF1 tf.contrib code",
+        "Cluster-level contrast term depends only on nontrainable F/F_aug and placeholder-fed NumPy SVD updates, with no gradient path to trainable encoder; no missing-feed runtime failure demonstrated",
+        "Recipe batch/SVD discrepancy and label-selected output",
+        "Full-pool resource demand; license unstated"
+      ]
+    },
+    {
+      "method_id": "cdcc",
+      "canonical_name": "CDCC",
+      "historical_audit08_readiness": "BLOCKED",
+      "source_commit": "013865ff4d13f08d0f5dcdf5bcfba0f5e009c8a0",
+      "implementation_status": "BLOCKED",
+      "evidence_report": "analysis/audits/08-baseline-protocol-gate.md",
+      "conditions": [
+        "Integer view-selector indices zero rows0/1 rather than chosen rows",
+        "Univariate N,1,L permutes to1,N,L: LSTM sequence length1",
+        "Fresh random h_0/c_0 even eval",
+        "B256/drop_last zero batches on small tasks",
+        "No corrected author artifact; license unstated"
+      ]
+    },
+    {
+      "method_id": "fcacc",
+      "canonical_name": "FCACC",
+      "historical_audit08_readiness": "READY WITH CONDITIONS",
+      "source_commit": "78b5e5a138ed8c83fea64e5b6668a5cded79d2dc",
+      "implementation_status": "CONDITIONAL_NOT_IMPLEMENTED",
+      "evidence_report": "analysis/audits/08-baseline-protocol-gate.md",
+      "conditions": [
+        "Exact working environment and native n_init semantics unresolved",
+        "Inference ignores indices; ordered export required",
+        "Persist SWA deployed state; avoid unused N,L,d allocation only after parity check",
+        "Fixed released100+30 policy must be explicit; license unstated"
+      ]
+    },
+    {
+      "method_id": "tfmcc",
+      "canonical_name": "TFMCC",
+      "historical_audit08_readiness": "READY WITH CONDITIONS",
+      "source_commit": "882764f52b9efa1ec0950fb90369ed113e988116",
+      "implementation_status": "CONDITIONAL_NOT_IMPLEMENTED",
+      "evidence_report": "analysis/audits/08-baseline-protocol-gate.md",
+      "conditions": [
+        "No valid dependency lock; README ambiguous",
+        "Native B256/head320x512/1400epochs unlikely feasible across44 on8GB",
+        "Smaller batch changes negatives/BatchNorm; requires global Development8 freeze",
+        "Paper Adam/code AdamW discrepancy; license unstated"
+      ]
+    },
+    {
+      "method_id": "ts2vec_kmeans",
+      "canonical_name": "TS2Vec + k-means",
+      "historical_audit08_readiness": "READY WITH CONDITIONS",
+      "source_commit": "b0088e14a99706c05451316dc6db8d3da9351163",
+      "implementation_status": "CONDITIONAL_NOT_IMPLEMENTED",
+      "evidence_report": "analysis/audits/08-baseline-protocol-gate.md",
+      "conditions": [
+        "Pooled SSL/head wrapper not validated",
+        "Independent head seed/explicit n_init solver freeze required",
+        "Legacy environment not built"
+      ]
+    },
+    {
+      "method_id": "r_clustering",
+      "canonical_name": "R-Clustering",
+      "historical_audit08_readiness": "READY WITH CONDITIONS",
+      "source_commit": "3ed571eebe9eb8d399a0c995a6917f62d838f0fc",
+      "implementation_status": "READY WITH WARNINGS",
+      "evidence_report": "analysis/audits/10-baseline-wave1b-readiness.md",
+      "adapter_commit": null,
+      "adapter_parent_commit": "5ff48377deac2b5934b450951eb41b1e3b08e7c9",
+      "adapter_tree_sha256": "5b684201940171e0a855ffdab9ca1392b07e25ffc2fa50022e16921e4748026f",
+      "environment_sha256": "e31cf122e4cd92edc3b4c4d17fae4f34475dce9e57195f677606f0c0586ead8a",
+      "environment_lock": "experiments_new/baselines2026/configs/requirements-wave1b.lock.txt",
+      "environment_lock_sha256": "6c1f18b31a205d3a8c04c2bff1e61ea609c759a37ab643316d5700cd9fa56308",
+      "smoke_dataset": "ECG200",
+      "smoke_seed": 0,
+      "smoke_status": "SUCCESS",
+      "run_id": "7c37a77ed155289ad658220a2f1e01500650f017988dd094f6ff33541beb2eb2",
+      "external_artifact_directory": "G:\\Articoli\\Articoli da Completare\\LoSTer 2026\\baselines\\wave1b\\development-smoke-002\\runs\\r_clustering\\7c37a77ed155289ad658220a2f1e01500650f017988dd094f6ff33541beb2eb2",
+      "conditions": [
+        "Native500 request produces420; zero-PC input remains unsupported, no clamp; final campaign resource gates outstanding"
+      ]
+    },
+    {
+      "method_id": "kasba",
+      "canonical_name": "KASBA",
+      "historical_audit08_readiness": "READY FOR IMPLEMENTATION",
+      "source_commit": "0fed29f21908cfad2981ea645f51aaf018f0fe89",
+      "implementation_status": "READY FOR DEVELOPMENT BENCHMARK",
+      "evidence_report": "analysis/audits/09-baseline-wave1-readiness.md",
+      "preserved_adapter_commit": "5ff48377deac2b5934b450951eb41b1e3b08e7c9",
+      "smoke_dataset": "SyntheticControl",
+      "smoke_seed": 0,
+      "smoke_status": "SUCCESS",
+      "run_id": "133b639a9835312991848b826b30d1ac4c291e8c7de03c037f9096ba84807a43",
+      "source_bundle_sha256": "30b60e97568814e97254d34a77b71948cb99277de44fb90752e309b54a4e7a7d"
+    },
+    {
+      "method_id": "fasa",
+      "canonical_name": "FASA",
+      "historical_audit08_readiness": "READY WITH CONDITIONS",
+      "source_commit": "9c05d415efee81fca1a87c1e91623db613ea2ecc",
+      "implementation_status": "READY WITH WARNINGS",
+      "evidence_report": "analysis/audits/10-baseline-wave1b-readiness.md",
+      "adapter_commit": null,
+      "adapter_parent_commit": "5ff48377deac2b5934b450951eb41b1e3b08e7c9",
+      "adapter_tree_sha256": "d61b119802efa5bf0dfb8ddf8a7b22a4af7e643ee9492b756084852d565015c2",
+      "environment_sha256": "e31cf122e4cd92edc3b4c4d17fae4f34475dce9e57195f677606f0c0586ead8a",
+      "environment_lock": "experiments_new/baselines2026/configs/requirements-wave1b.lock.txt",
+      "environment_lock_sha256": "6c1f18b31a205d3a8c04c2bff1e61ea609c759a37ab643316d5700cd9fa56308",
+      "smoke_dataset": "ECG200",
+      "smoke_seed": 0,
+      "smoke_status": "SUCCESS",
+      "run_id": "18dd57ad80a54aa5bbcecf5f6497426b674dd6508eae69142b1efcef4b5bd0f4",
+      "external_artifact_directory": "G:\\Articoli\\Articoli da Completare\\LoSTer 2026\\baselines\\wave1b\\development-smoke-001\\runs\\fasa\\18dd57ad80a54aa5bbcecf5f6497426b674dd6508eae69142b1efcef4b5bd0f4",
+      "conditions": [
+        "Source license NOT STATED; no vendoring/distribution assertion; native zero-norm behavior retained; final campaign resource gates outstanding"
+      ]
+    }
+  ]
+}
